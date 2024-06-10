@@ -1,0 +1,22 @@
+name: PHP Test
+
+on: [push]
+
+jobs:
+  php-tests:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Finding files
+      id: finding-files        
+      run: |
+        {
+        echo 'FILELIST<<EOF'
+        find . -name '*.php' -print 
+        echo EOF
+        } >> "$GITHUB_ENV"
+    - name: Do something with each file
+      run: |
+        for i in $FILELIST; do
+            php -l ${i}
+        done 
