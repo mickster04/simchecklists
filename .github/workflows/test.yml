@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
-    - name: Finding files
+    - name: Finding PHP files
       id: finding-files        
       run: |
         {
@@ -15,8 +15,8 @@ jobs:
         find . -name '*.php' -print 
         echo EOF
         } >> "$GITHUB_ENV"
-    - name: Do something with each file
+    - name: Test PHP Syntax
       run: |
         for i in $FILELIST; do
             php -l ${i}
-        done 
+        done
