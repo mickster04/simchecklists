@@ -84,3 +84,4 @@ Fuel Shutoff=OUT
 Throttle/Mix Shutoff=OUT
 Doors=OPEN
 Battery=OFF
+--Checklist by tibonev--

@@ -15,17 +15,18 @@ $title = $check->getTitles();
 	<body>
 		<div class="main-container">
 			
+
 			<div class="content">
 				<h2><?PHP echo $app_title; ?> - Interactive Checklists:</h2>
 				Choose your aircraft:<br>
 				<?PHP $check->displayTitles($title); ?>
 			</div>	
 			
-			<br><br>
+			
 			
 			Or upload your own file (the files aren't saved on my server):
 			
-			<br><br>
+			<div class="spacer"></div>
 			
 			<form action="checklist.php" method="post" enctype="multipart/form-data">
 				<input type="file" name="file" id="file" />
@@ -33,7 +34,9 @@ $title = $check->getTitles();
 				<input type="submit" name="submit" value="Send" />
 			</form>
 			
-			<br><br>
+			<div class="spacer"></div>	
+
+			<div><?PHP $theme->theme_selector(); ?></div>			
 			
 			<?PHP require('inc/_footer.php'); ?>
 		</div>

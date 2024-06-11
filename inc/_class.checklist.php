@@ -15,10 +15,17 @@ class checklist {
 		return $title;
 	}
 	
-	public function displayTitles($title) { 
-		foreach($title as $t) { 
-			echo '- <a href="checklist.php?l='.$t[1].'">'.$t[0].'</a><br>';
+	public function validateChecklist($list) { 
+		if (pathinfo($_FILES[$list]['name'], PATHINFO_EXTENSION) !== 'txt') {  
+			return false; 
 		}
+		
+		if (is_uploaded_file($_FILES[$list]['tmp_name'])) { 
+			if(mime_content_type($_FILES[$list]['tmp_name']) !== "text/plain") { 
+				return false; 
+			} 
+		}
+		return true;
 	}
 	
 	public function loadChecklist($list, $user) { 
@@ -36,8 +43,15 @@ class checklist {
 		return $items;
 	}
 	
+	public function displayTitles($title) { 
+		foreach($title as $t) { 
+			echo '- <a href="checklist.php?l='.$t[1].'">'.$t[0].'</a><br>';
+		}
+	}
+	
 	public function displayList($items) { 
 		$c = 0;
+		$l = count($items);
 		foreach($items as $item) {
 			$class = "title";
 			$it = explode("=",$item); 
@@ -46,6 +60,7 @@ class checklist {
 						
 			if($class == "title") { 
 				if($c == 0) { $class_use = "title green"; } else { $class_use = "title"; }
+				if($c == $l-1) { $class_use = "title blue"; } else { $class_use = "title"; }
 				echo '<div class="'.$class_use.'">'.str_replace("--", "", $it['0']).'</div>';
 			} else { 
 				echo '<div class="items">
@@ -56,5 +71,6 @@ class checklist {
 			$c++;
 		}
 	}
+	
 }
 ?>

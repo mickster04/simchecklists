@@ -21,11 +21,13 @@ Checklist files are simple .txt files, the format is also very simple, basically
 - the very first line of the file is the main title (aka aircraft name)
 - each new sublist (Pre-Flight, Before Takeoff, Taxi, etc) is named between double dashes (ie. --Before Flight--) also on its own line.
 - each item use the format descriptive=state (ie. Parking Brake=ON). 
+- If you want to credit the checklist, just use --Credits-- on the very last line of the checklist file.
 
 
 ### Theme Files 
 You can define a new theme file in the 'inc/_config.php', it must be a valid file placed within the 'assets subfolder'.
-The format is very simple: one item per line, in the "property=value" format.
+The format is very simple: one item per line, in the "property=value" format. 
+All themes have both a dark and light version, inside the same file.
 
 
 ### Requirements
@@ -34,6 +36,17 @@ The code was written in PHP and Javascript, you need to use at least PHP7 and a 
 
 ### Version History: 
 
-Version 1.0: (June 2024)
+Version 1.0.1 (2024/06/11)
+- Fixed typo on _footer.php (inc/_footer.php).
+- Fix: Issue #1 - Swiping left on a item will uncheck it (mobile only for now).
+- Fix: Issue #2 - Added a function in inc/_class.checklist.php to validate the file extension and MIME type.
+- Fix: Issue #3 - Added a SVG icon for refresh, at the top and bottom of the checklist.
+- Fix: Issue #4 - Added a SVG icon for going back, both at the top and bottom of the checklist.
+- Fix: Issue #5 - If the last line of the checklist is a title, its displayed in a different color.
+- Fix: Issue #6 - Added a drop-down selector to choose from possible themes, choice is saved in a php_session.
+- Fix: Issue #7 - Changed .thm files to support light/dark version of the colors.
+- Fix: Issue #9 - Added proper spacing between elements.
+
+Version 1.0: (2024/06/10)
 - First version.
 - Added checklists for Cessna 172 Skyhawk (X-Plane w/ 530 GPS).

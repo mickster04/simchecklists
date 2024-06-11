@@ -1,3 +1,9 @@
+var touchstartX = 0;
+var touchendX = 0;
+var itemsList = document.getElementsByClassName('items');
+var itemHighlight = itemsList[0];
+itemHighlight.classList.add('highlight');
+
 function cross() {
 	this.classList.add('items-done');
 	this.querySelector(".state").classList.add('state-done');
@@ -17,11 +23,18 @@ function cross() {
 	}
 }
 
-var itemsList = document.getElementsByClassName('items');
-var itemHighlight = itemsList[0];
-itemHighlight.classList.add('highlight');
-
-var els = document.getElementsByClassName('items');
-for (var i = 0; i < els.length; i++) {
-	els[i].addEventListener('click', cross, false)
+for (var i = 0; i < itemsList.length; i++) {
+	itemsList[i].addEventListener('click', cross, false);
+	
+	itemsList[i].addEventListener('touchstart', function(event) { touchstartX = event.changedTouches[0].screenX; });
+	
+	itemsList[i].addEventListener('touchend', function(event) { 
+		touchendX = event.changedTouches[0].screenX;
+		if(touchstartX > touchendX) {
+			this.querySelector(".state").classList.remove('state-done');
+			this.querySelector(".strike").style.opacity = "0";
+			for(i =0; i < itemsList.length; i++) { itemsList[i].classList.remove('highlight'); }
+			this.classList.add('highlight');
+		}
+	});
 }

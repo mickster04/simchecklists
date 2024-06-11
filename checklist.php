@@ -11,8 +11,10 @@ if(isset($_GET['l'])) {
 	$user = 0;
 }
 if(isset($_POST['post_check'])) { 
-	$list = $_FILES["file"]["tmp_name"]; 
-	$user = 1;
+	if($check->validateChecklist("file")) { 
+		$list = $_FILES["file"]["tmp_name"]; 
+		$user = 1;
+	} else { die("Only .txt (text/plain) files allowed!"); }
 }
 $items = array();
 $items = $check->loadChecklist($list, $user);
@@ -22,15 +24,26 @@ $items = $check->loadChecklist($list, $user);
 <!doctype html>
 <html lang="en">
 	<?PHP require('inc/_head.php'); ?>
-	
 	<body>
 		<div class="main-container">
+			
+			<div class="icons">
+				<div><a href="index.php"><?PHP $theme->theme_icon('back'); ?></a></div>
+				<div onclick="location.reload(true);"><?PHP $theme->theme_icon('refresh'); ?></div>
+			</div>
 			
 			<div class="content">
 				<?PHP $check->displayList($items); ?>
 			</div>	
 			
-			<br><br>
+			<div class="spacer"></div>
+			
+			<div class="icons">
+				<div><a href="index.php"><?PHP $theme->theme_icon('back'); ?></a></div>
+				<div><?PHP $theme->theme_icon('refresh'); ?></div>
+			</div>
+			
+			<div class="spacer"></div>
 			
 			<?PHP require('inc/_footer.php'); ?>
 		</div>

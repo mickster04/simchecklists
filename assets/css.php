@@ -5,16 +5,26 @@
 	}
 			
 	body { 
-		background-color:<?PHP echo $theme->theme_value('bg_color'); ?>;
+		background-color:<?PHP echo $theme->theme_value('dark_bg_color'); ?>;
 		font-size:14px;
 		font-family:myterminal;
-		color:<?PHP echo $theme->theme_value('txt_color'); ?>
+		color:<?PHP echo $theme->theme_value('dark_txt_color'); ?>
 	}
 	
 	a { 
-		color:<?PHP echo $theme->theme_value('txt_green'); ?>; 
+		color:<?PHP echo $theme->theme_value('dark_txt_green'); ?>; 
 		text-decoration:none;
 	} 
+	
+	.icon { fill:<?PHP echo $theme->theme_value('dark_txt_color'); ?>; }
+	
+	.spacer { height:20px; }
+	
+	.icons { 
+		display:flex;
+		justify-content: space-between;
+	}
+	.icons div { cursor:pointer; }
 			
 	.main-container {
 		width:100%;
@@ -31,13 +41,15 @@
 	}
 			
 	.title { 
-		color:<?PHP echo $theme->theme_value('txt_yellow'); ?>; 
+		color:<?PHP echo $theme->theme_value('dark_txt_yellow'); ?>; 
 		font-size:16px; 
 		padding:10px;
 	} 
 	
-	.green { color:<?PHP echo $theme->theme_value('txt_green'); ?>; }
+	.green { color:<?PHP echo $theme->theme_value('dark_txt_green'); ?>; }
 	
+	.blue { color:<?PHP echo $theme->theme_value('dark_txt_blue'); ?>; }
+		
 	.items {
 		position:relative;
 		display:flex; 
@@ -48,16 +60,52 @@
 	.strike { 
 		position:absolute;
 		width:100%;
-		background-color:white;
+		background-color:<?PHP echo $theme->theme_value('dark_strike'); ?>;
 		top:12px;
 		height:1px;
 		opacity:0;
 	}
 			
-	.state { color:<?PHP echo $theme->theme_value('txt_red'); ?>; }
-	.state-done { color:<?PHP echo $theme->theme_value('txt_green'); ?>; }
+	.state { color:<?PHP echo $theme->theme_value('dark_txt_red'); ?>; }
+	.state-done { color:<?PHP echo $theme->theme_value('dark_txt_green'); ?>; }
 	
-	.highlight { background-color: <?PHP echo $theme->theme_value('bg_highlight'); ?>; }
+	.highlight { background-color: <?PHP echo $theme->theme_value('dark_bg_highlight'); ?>; }
 			
 	.footer { font-size:10px; }
+	
+	@media (prefers-color-scheme: dark) {
+		body { 
+			background-color:<?PHP echo $theme->theme_value('dark_bg_color'); ?>;
+			color:<?PHP echo $theme->theme_value('dark_txt_color'); ?>
+		}
+	
+		a { color:<?PHP echo $theme->theme_value('dark_txt_green'); ?>; } 
+		.icon { fill:<?PHP echo $theme->theme_value('dark_txt_color'); ?>; }
+		.title {  color:<?PHP echo $theme->theme_value('dark_txt_yellow'); ?>; } 
+		.green { color:<?PHP echo $theme->theme_value('dark_txt_green'); ?>; }
+		.blue { color:<?PHP echo $theme->theme_value('dark_txt_blue'); ?>; }
+		.state { color:<?PHP echo $theme->theme_value('dark_txt_red'); ?>; }
+		.state-done { color:<?PHP echo $theme->theme_value('dark_txt_green'); ?>; }
+		.highlight { background-color: <?PHP echo $theme->theme_value('dark_bg_highlight'); ?>; }
+		.strike { background-color:<?PHP echo $theme->theme_value('dark_strike'); ?>; }
+	}
+	
+	@media (prefers-color-scheme: light) {
+		body { 
+			background-color:<?PHP echo $theme->theme_value('light_bg_color'); ?>;
+			color:<?PHP echo $theme->theme_value('light_txt_color'); ?>
+		}
+	
+		a { color:<?PHP echo $theme->theme_value('light_txt_green'); ?>; } 
+		.icon { fill:<?PHP echo $theme->theme_value('light_txt_color'); ?>; }
+		.title {  color:<?PHP echo $theme->theme_value('light_txt_yellow'); ?>; } 
+		.green { color:<?PHP echo $theme->theme_value('light_txt_green'); ?>; }
+		.blue { color:<?PHP echo $theme->theme_value('light_txt_blue'); ?>; }
+		.state { color:<?PHP echo $theme->theme_value('light_txt_red'); ?>; }
+		.state-done { color:<?PHP echo $theme->theme_value('light_txt_green'); ?>; }
+		.highlight { background-color: <?PHP echo $theme->theme_value('light_bg_highlight'); ?>; }
+		.strike { background-color:<?PHP echo $theme->theme_value('light_strike'); ?>; }
+	}
+	
+	
 </style>
