@@ -71,7 +71,10 @@
 	
 	.highlight { background-color: <?PHP echo $theme->theme_value('dark_bg_highlight'); ?>; }
 			
-	.footer { font-size:10px; }
+	.footer { 
+		padding-top:50px;
+		font-size:10px; 
+	}
 	
 	@media (prefers-color-scheme: dark) {
 		body { 

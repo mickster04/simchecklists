@@ -6,6 +6,10 @@ Coded by [tibonev](http://classicgames.com.br)
 
 Check the live version of this app @ [checklist.classicgames.com.br] (http://checklist.classicgames.com.br)
 
+## Status
+![commit](https://img.shields.io/github/last-commit/jflores82/simchecklists) ![build](https://img.shields.io/github/actions/workflow/status/jflores82/simchecklists/test.yml)
+
+
 ## Screenshots
 
 ![01](http://classicgames.com.br/temp/simcheck01.png) ![02](http://classicgames.com.br/temp/simcheck02.png)
@@ -35,6 +39,14 @@ The code was written in PHP and Javascript, you need to use at least PHP7 and a 
 
 
 ### Version History: 
+
+Version 1.0.2 (2024/06/13)
+- Fix: Issue #11 - Altered the swipe functio to only trigger after a mininum difference between touchStartX and touchEndX.
+- Fix: Issue #12 - Added a check to see if there's a theme pre-selected, otherwise the selector goes automatically to thm_default.thm.
+- Fix: Issue #14 - Added a function to sanitize and sort the list by the title of the aircraft.
+- Added: Airbus A320neo Checklist.
+- Added: Beechcraft Baron 59 Checklist.
+
 
 Version 1.0.1 (2024/06/11)
 - Fixed typo on _footer.php (inc/_footer.php).

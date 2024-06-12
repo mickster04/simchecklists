@@ -1,4 +1,4 @@
-﻿Cessna 172 Skyhawk (X-Plane w/ 530 GPS)
+Cessna 172 Skyhawk (G530)
 --Pre-Flight--
 Walk around=DONE
 Parking Brake=ON

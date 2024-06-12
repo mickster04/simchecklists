@@ -8,10 +8,16 @@ class checklist {
 		$i = 0;
 		foreach($lists as $list) { 
 			$list_array = explode("\n", file_get_contents($list));
-			$title[$i][0] = $list_array[0];
-			$title[$i][1] = substr($list,6);
+			$title[$i]['name'] = $list_array[0];
+			$title[$i]['file'] = substr($list,6);
 			$i++;
 		}
+		
+		$key_values = array_column($title, 'name'); 
+		foreach($key_values as $k) { 
+			$arr[] = strtoupper(filter_var($k, FILTER_SANITIZE_STRING));
+		}
+		array_multisort($arr, SORT_ASC, $title);
 		return $title;
 	}
 	
@@ -45,7 +51,7 @@ class checklist {
 	
 	public function displayTitles($title) { 
 		foreach($title as $t) { 
-			echo '- <a href="checklist.php?l='.$t[1].'">'.$t[0].'</a><br>';
+			echo '- <a href="checklist.php?l='.$t['file'].'">'.$t['name'].'</a><br>';
 		}
 	}
 	
@@ -71,6 +77,8 @@ class checklist {
 			$c++;
 		}
 	}
+	
+	
 	
 }
 ?>

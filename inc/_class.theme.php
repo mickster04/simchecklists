@@ -27,11 +27,14 @@ class theme {
 				$c++;
 			}
 		}
-		
+		$selected = "";
 		echo '<form action="index.php" method="post"><select name="theme">';
 		foreach($themes as $t) { 
-			if(isset($_SESSION['theme'])) { if($_SESSION['theme'] == substr($t['file'],6)) {  $selected = "selected"; } else { $selected = ""; } }
+			if(isset($_SESSION['theme'])) { 
+				if($_SESSION['theme'] == substr($t['file'],6)) { $selected = "selected"; } else { $selected = ""; } 
+			} else {if($t['file'] == "assets/thm_default.thm") { $selected = "selected"; } }
 			echo '<option value="'.$t['file'].'" '.$selected.'>'.$t['name'].'</option>'; 
+			$selected = "";
 		}
 		echo '</select>&nbsp;&nbsp;<input value="Change Theme" type="submit"></form>';
 	}

@@ -31,10 +31,12 @@ for (var i = 0; i < itemsList.length; i++) {
 	itemsList[i].addEventListener('touchend', function(event) { 
 		touchendX = event.changedTouches[0].screenX;
 		if(touchstartX > touchendX) {
-			this.querySelector(".state").classList.remove('state-done');
-			this.querySelector(".strike").style.opacity = "0";
-			for(i =0; i < itemsList.length; i++) { itemsList[i].classList.remove('highlight'); }
-			this.classList.add('highlight');
+			if( (touchstartX - touchendX) > 80 ) { 
+				this.querySelector(".state").classList.remove('state-done');
+				this.querySelector(".strike").style.opacity = "0";
+				for(i =0; i < itemsList.length; i++) { itemsList[i].classList.remove('highlight'); }
+				this.classList.add('highlight');
+			}
 		}
 	});
 }
