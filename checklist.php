@@ -25,10 +25,13 @@ $items = $check->loadChecklist($list, $user);
 <html lang="en">
 	<?PHP require('inc/_head.php'); ?>
 	<body>
+		
+		<?PHP require('icao.php'); ?>
+		
 		<div class="main-container">
-			
 			<div class="icons">
 				<div><a href="index.php"><?PHP $theme->theme_icon('back'); ?></a></div>
+				<div class="icao_open"><?PHP $theme->theme_icon('icao'); ?></div>
 				<div onclick="location.reload(true);"><?PHP $theme->theme_icon('refresh'); ?></div>
 			</div>
 			
@@ -40,7 +43,8 @@ $items = $check->loadChecklist($list, $user);
 			
 			<div class="icons">
 				<div><a href="index.php"><?PHP $theme->theme_icon('back'); ?></a></div>
-				<div><?PHP $theme->theme_icon('refresh'); ?></div>
+				<div class="icao_open"><?PHP $theme->theme_icon('icao'); ?></div>
+				<div onclick="location.reload(true);"><?PHP $theme->theme_icon('refresh'); ?></div>
 			</div>
 			
 			<div class="spacer"></div>
@@ -50,5 +54,6 @@ $items = $check->loadChecklist($list, $user);
 	</body>
 	
 	<script src="assets/checks.js"></script>
+	<script src="assets/icao.js"></script>
 
 </html>

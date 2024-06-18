@@ -39,7 +39,7 @@ Parking Brake=RELEASE
 --Before Takeoff--
 Landing Lights=ON
 Pitot Heat=AS REQUIRED
-Cowl Laps=AS REQUIRED
+Cowl Flaps=AS REQUIRED
 Flaps=SET APH FOR SHORT TO
 Brakes=FULL
 Request Takeoff=AS REQUIRED

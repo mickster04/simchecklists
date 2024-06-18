@@ -14,7 +14,6 @@ Passenger Briefing=DONE
 Seats and Belts=DONE 
 Flight Plan=CHECKED
 --Start--
-Battery=ON
 Test Flaps=UP/DN/UP
 Carb Heat=COLD
 Fuel Mix=FULL

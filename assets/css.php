@@ -46,6 +46,28 @@
 		padding:10px;
 	} 
 	
+	.icao-window { 
+		position:fixed;
+		width:100%;
+		height:100vh;
+		z-index:999;
+		padding-left:2%;
+		padding-top:2%;
+		display:none;
+	}
+	.is-visible { display:block; }
+	
+	.icao-window .inner-icao { 
+		position:relative;
+		width:90%;
+		height:90vh;
+		padding-left:10px;
+		padding-top:10px;
+		border-radius:5px;
+		background-color: <?PHP echo $theme->theme_value('dark_bg_highlight'); ?>;
+		color: <?PHP echo $theme->theme_value('dark_txt_color'); ?>;
+	}
+		
 	.green { color:<?PHP echo $theme->theme_value('dark_txt_green'); ?>; }
 	
 	.blue { color:<?PHP echo $theme->theme_value('dark_txt_blue'); ?>; }
@@ -70,7 +92,15 @@
 	.state-done { color:<?PHP echo $theme->theme_value('dark_txt_green'); ?>; }
 	
 	.highlight { background-color: <?PHP echo $theme->theme_value('dark_bg_highlight'); ?>; }
-			
+		
+	.runway_info { float:left; }
+	.runway_number { width:20%; }
+	.runway_navid { width:30% } 
+	.runway_navaid { width:25%; }
+	.runway_freq { width: 20%; }
+	.runway_surface {width:25%; }
+	.new_line { clear:both; }
+		
 	.footer { 
 		padding-top:50px;
 		font-size:10px; 
@@ -84,6 +114,7 @@
 	
 		a { color:<?PHP echo $theme->theme_value('dark_txt_green'); ?>; } 
 		.icon { fill:<?PHP echo $theme->theme_value('dark_txt_color'); ?>; }
+		.icon-inner { fill:<?PHP echo $theme->theme_value('light_txt_color'); ?>; }
 		.title {  color:<?PHP echo $theme->theme_value('dark_txt_yellow'); ?>; } 
 		.green { color:<?PHP echo $theme->theme_value('dark_txt_green'); ?>; }
 		.blue { color:<?PHP echo $theme->theme_value('dark_txt_blue'); ?>; }
@@ -91,6 +122,13 @@
 		.state-done { color:<?PHP echo $theme->theme_value('dark_txt_green'); ?>; }
 		.highlight { background-color: <?PHP echo $theme->theme_value('dark_bg_highlight'); ?>; }
 		.strike { background-color:<?PHP echo $theme->theme_value('dark_strike'); ?>; }
+		
+		.inner-icao { 
+			background-color: <?PHP echo $theme->theme_value('light_bg_highlight'); ?>;
+			color: <?PHP echo $theme->theme_value('light_txt_color'); ?>;
+		}
+		
+		
 	}
 	
 	@media (prefers-color-scheme: light) {
@@ -101,6 +139,7 @@
 	
 		a { color:<?PHP echo $theme->theme_value('light_txt_green'); ?>; } 
 		.icon { fill:<?PHP echo $theme->theme_value('light_txt_color'); ?>; }
+		.icon-inner { fill:<?PHP echo $theme->theme_value('dark_txt_color'); ?>; }
 		.title {  color:<?PHP echo $theme->theme_value('light_txt_yellow'); ?>; } 
 		.green { color:<?PHP echo $theme->theme_value('light_txt_green'); ?>; }
 		.blue { color:<?PHP echo $theme->theme_value('light_txt_blue'); ?>; }
@@ -108,6 +147,13 @@
 		.state-done { color:<?PHP echo $theme->theme_value('light_txt_green'); ?>; }
 		.highlight { background-color: <?PHP echo $theme->theme_value('light_bg_highlight'); ?>; }
 		.strike { background-color:<?PHP echo $theme->theme_value('light_strike'); ?>; }
+		
+		.inner-icao { 
+			background-color: <?PHP echo $theme->theme_value('dark_bg_highlight'); ?>;
+			color: <?PHP echo $theme->theme_value('dark_txt_color'); ?>;
+		}
+		
+		
 	}
 	
 	

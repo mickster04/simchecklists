@@ -24,6 +24,7 @@ If you're on a touchscreen (recommended) just touch the item to cross and move t
 - Beechcraft Bonanza G36
 - Cessna 152
 - Cessna 172 Skyhawk (G530 Version)
+- Cessna 337 Skymaster (Thranda/X-Plane)
 
 ## Checklist Files
 Checklist files are simple .txt files, the format is also very simple, basically 1 item per line, with a few exceptions:
@@ -34,7 +35,8 @@ Checklist files are simple .txt files, the format is also very simple, basically
 If you upload your file through the interface please keep in mind the app is checking both the file extention (for .txt) and the MIME type (for plain/text), otherwise it will refuse your file.
 
 ### Theme Files 
-You can define a new theme file in the 'inc/_config.php', it must be a valid file placed within the 'assets subfolder'.
+You can choose from one of the available themes in the select box. 
+To install a new theme, upload a .thm file to /assets/.
 The format is very simple: one item per line, in the "property=value" format. 
 All themes have both a dark and light version, inside the same file.
 
@@ -43,6 +45,13 @@ The code was written in PHP and Vanilla Javascript, you need to use at least PHP
 No need to build anything, it runs straight from the server.
 
 ### Version History: 
+
+Version 1.1.0
+- Fix: Issue #15 - wrong javascript reference fixed, buttons working as intended.
+- Fix: Issue #16 - Support to check for airport information via the flightplandatabase public api (ajax fetch).
+- Fix: Beechcraft Bonanza G36 Checklist typo (Cowl Laps fixed to Cowl Flaps, line 42)
+- Fix: Cessna 152 Checklist (Battery=ON line was duplicated)
+- Added: Cessna 337 Skymaster (Thranda/X-Plane) Checklist by Lightdasher360
 
 Version 1.0.3 (2024/06/13)
 - Fix: Issue #13 - Added auto-scroll only if the clicked item is positioned after 65% of the screen height.
