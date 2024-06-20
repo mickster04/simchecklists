@@ -19,6 +19,7 @@ Left Mixture=Rich
 Left Propeller=High RPM
 Left Throttle=Cracked (one inch)
 Left Auxiliary Fuel Pump Switch=On Low
+Open Window=Clear prop!!
 Front/Left Engine Ignition/Starter Switch=Start (when fuel flow is steady at 10-25lbs/hr)
 Left Auxiliary Fuel Pump Switch=Off
 Left Oil Pressure Gauge=Check in green arc range within 30 seconds
