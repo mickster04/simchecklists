@@ -1,0 +1,111 @@
+Cessna Citation X
+--Preflight Exterior Inspection--
+Batt1 & Batt2=On
+Hydraulic A AUX PUMP=On
+Ailerons=Check full deflection
+Elevator=Check full deflection
+Rudder=Check full deflection
+Hydraulic A AUX PUMP=Off
+--Before Engine Start--
+Cabin Door=Closed
+Parking Brake=On
+Nav Lights=On
+APU Master=On
+APU Start=Lift, wait for rise, release
+APU RPMS=Wait for 100%
+APU Generator=On
+Standby Power=On
+Emergency Lights=Set
+Avionics=On
+Systems test=Complete
+Comms=Checked & set
+ATIS=Obtained
+Altimeter=Set
+Flight Plan=Set
+Departure briefing=Complete
+--Engine Start--
+Beacon Lights=GND
+APU Bleed=On
+EICAS=On
+EICAS Mode=ELEC
+Throttles=Idle
+Right Engine=Start
+ITT=Monitor (disengage starter if required)
+Left Engine=Start
+ITT=Monitor (disengage starter if required)
+LH & RH Generators=On
+APU Bleed=Off
+APU Generator=Off
+LH & RH Center Wing Xfer=Norm
+--Before Taxi--
+Pitot/Static LH & RH=On
+Windshield LH & RH=On
+Passenger Oxygen=Auto
+Seatbelt Sign=On
+Pressurization=Set
+Stabilizer Trim=Set for T/O
+Flaps=Set
+Flight Controls=Checked
+Heading Indicator=Verify for assigned RWY
+Taxi Lights=On
+Transponder=STBY
+Parking Brake=Off
+--Before Take-Off--
+Flaps=Check
+Beacon Lights=Full
+Landing Lights=On
+Transponder=ATC on
+Emergency Procedure Briefing=Complete
+Taxi Lights=Off
+--After Take-Off--
+Landing Gear=Up
+Beacon Lights=GND
+Flaps=Retracted
+Throttles=As required
+APU Stop=Depress, wait, release
+APU Master=Off
+Seatbelt Sign=Off above 10,000ft
+Altimeter=Set standard above 18,000ft
+--Cruise--
+Landing Lights=Off
+Approach briefing=Complete prior to descent
+--Descent--
+Altimeter=Set by 18,000ft
+Seatbelt Sign & Landing Lights=On by 10,000ft
+--Before Landing--
+Nav=ILS/GPS set
+Landing Gear=Down
+Flaps & Speedbrakes=As required
+Beacon Lights=Full
+--After Landing--
+Flaps & Speedbrakes=Retracted
+Beacon Lights=GND
+Taxi Lights=On
+Landing Lights=Off
+Transponder=STBY
+APU Master=On
+APU Start=Lift, wait for rise, release
+--Parking--
+Taxi Lights=Off
+Parking Brake=On
+Pitot/Static LH & RH=Off
+Windshield LH & RH=Off
+APU Generator=On
+Throttles=Cut off
+EICAS=Off
+Beacon Lights=Off
+Passenger Oxygen=Off
+Seatbelt Sign=Off
+LH & RH Center Wing Xfer=Off
+LH & RH Generators=Off
+Cabin Door=Open
+--Shutdown--
+Emergency Lights=Off
+Standby Power=Off
+APU Generator=Off
+APU Stop=Depress, wait, release
+APU Master=Off
+Nav Lights=Off
+Avionics=Off
+BATT1 & Batt2=Off
+--Checklist by Lightdasher360--
