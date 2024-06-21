@@ -38,6 +38,7 @@ function icao_submit() {
 	$url = $base_url + document.getElementById('airport_code').value;
 	document.getElementsByClassName("airport_name")[0].innerHTML = "Loading...";
 	document.getElementsByClassName("runways")[0].innerHTML = "Loading...";
+	document.getElementsByClassName("runways_list")[0].innerHTML = "Loading...";
 	fpdb_get();
 }
 
@@ -51,6 +52,7 @@ function icao_open() {
 
 function cleanup_fields() { 
 	document.getElementsByClassName("airport_name")[0].innerHTML = "";
+	document.getElementsByClassName("runways_list")[0].innerHTML = "";
 	document.getElementsByClassName("runways")[0].innerHTML = "";
 	document.getElementById('airport_code').value = "";
 }

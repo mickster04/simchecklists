@@ -66,8 +66,9 @@
 		border-radius:5px;
 		background-color: <?PHP echo $theme->theme_value('dark_bg_highlight'); ?>;
 		color: <?PHP echo $theme->theme_value('dark_txt_color'); ?>;
+		overflow: auto;
 	}
-		
+	
 	.green { color:<?PHP echo $theme->theme_value('dark_txt_green'); ?>; }
 	
 	.blue { color:<?PHP echo $theme->theme_value('dark_txt_blue'); ?>; }
@@ -114,7 +115,7 @@
 	
 		a { color:<?PHP echo $theme->theme_value('dark_txt_green'); ?>; } 
 		.icon { fill:<?PHP echo $theme->theme_value('dark_txt_color'); ?>; }
-		.icon-inner { fill:<?PHP echo $theme->theme_value('light_txt_color'); ?>; }
+		.icon-inner { fill:<?PHP echo $theme->theme_value('dark_txt_color'); ?>; }
 		.title {  color:<?PHP echo $theme->theme_value('dark_txt_yellow'); ?>; } 
 		.green { color:<?PHP echo $theme->theme_value('dark_txt_green'); ?>; }
 		.blue { color:<?PHP echo $theme->theme_value('dark_txt_blue'); ?>; }

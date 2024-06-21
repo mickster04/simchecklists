@@ -4,7 +4,7 @@ I guess it can be applied to any checklists, like grocery shopping, but it wasn'
 
 Coded by [tibonev](http://classicgames.com.br)
 
-Check the live version of this app @ [checklist.classicgames.com.br] (http://checklist.classicgames.com.br)
+Check the live version of this app @ [checklist.classicgames.com.br](http://checklist.classicgames.com.br)
 
 ## Status
 ![commit](https://img.shields.io/github/last-commit/jflores82/simchecklists) ![build](https://img.shields.io/github/actions/workflow/status/jflores82/simchecklists/test.yml)
@@ -18,13 +18,14 @@ Select or upload the desired checklist, click on a item to automatically cross i
 If you're on a touchscreen (recommended) just touch the item to cross and move to the next.
 
 ## Currently supported Aircraft 
-- Airbus A320neo (Generic / ini / ToLiss)
-- Airbus A320neo (Asobo v1)
+- Airbus A320neo 
 - Beechcraft Baron 58 
 - Beechcraft Bonanza G36
 - Cessna 152
 - Cessna 172 Skyhawk (G530 Version)
 - Cessna 337 Skymaster (Thranda/X-Plane)
+- Cessna CJ4 (Citation)
+- Cessna 750 (Citation X)
 
 ## Checklist Files
 Checklist files are simple .txt files, the format is also very simple, basically 1 item per line, with a few exceptions:
@@ -46,7 +47,16 @@ No need to build anything, it runs straight from the server.
 
 ### Version History: 
 
-Version 1.1.0
+Version 1.1.1 (2024/06/21)
+- Fix: Issue #18 - was missing a javascript call to a div.
+- Fix: Issue #19 - was missing a CSS parameter (overflow:auto) in the inner_icao class.
+- Fix: Issue #20 - wrong theme value call on default theme was causing the bug, fixed. 
+- Added: Cessna Citation X Checklist by Lightdasher360
+- Added: Cessna Citation CJ4 Checklist by tibonev
+- Added: Airbus A320neo (Simplified) Checklist by tibonev
+- Information: Regarding Issue #21 - made changes to how the app is cached by the browser, but it needs testing before is considered fixed. It should be better now.
+
+Version 1.1.0 (2024/06/18)
 - Fix: Issue #15 - wrong javascript reference fixed, buttons working as intended.
 - Fix: Issue #16 - Support to check for airport information via the flightplandatabase public api (ajax fetch).
 - Fix: Beechcraft Bonanza G36 Checklist typo (Cowl Laps fixed to Cowl Flaps, line 42)
