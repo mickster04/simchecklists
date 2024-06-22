@@ -67,7 +67,7 @@ APU Bleed=On
 Ignition Switches=Norm
 Engine Start Pressure=>30psi
 Right Engine=Start
-N2 at 10%=Right throttle to idle
+N2 at 10%=Right thrust to idle
 Eng 2=Check N1 rotation, ign annun, oil press rise, ITT rise/roll back after light off
 Eng 2 Checked=Repeat for engine 1
 LH/RH Generators=On, check amps & volts
@@ -101,7 +101,7 @@ Taxi Lights=Off
 Landing Gear=Up
 Beacon Lights=GND
 Flaps=Retracted
-Throttles & Autopilot=As required
+Thrust & Autopilot=As required
 --Climb Check--
 APU Generator=Off
 APU Stop=Depress, wait, release & Master off
@@ -145,7 +145,7 @@ APU=As required
 --Parking--
 Taxi Lights=Off
 Parking Brake=On
-Throttles (after 2min idle)=Cut off
+Thrust (after 2min idle)=Cut off
 Beacon Lights=Off
 Anti-Ice=Off
 Oxygen=Off
