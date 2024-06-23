@@ -163,4 +163,4 @@ Mixtures=Idle cut-off
 Fuel Selectors/Magnetos=Front/Rear Off
 Nav/Beacon Lights=Off
 Ignition/Starter Switches & Master Switch=Off
---Checklist by Lightdasher360--
+--Checklist by Lightdasher360, thanks to docs by Thranda for X-Plane and various pilots sharing exp & procs online!--
