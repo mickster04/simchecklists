@@ -34,8 +34,8 @@ APU Bleed=On
 LH Fuel Boost=Off
 Avionics=Confirm APU amps in green arc, then on
 FMS=Position init, then load
-APU Bleed On 2mins=Isolation valve & ac pacs as required
 Anti-Ice=Windshield & pitot/static LH/RH to on
+APU Bleed On 2mins=Isolation valve & ac pacs as required
 --Systems Test--
 Smoke Det=Double chime & master warning
 Ldg Gr=Solid tone, gear unlock light
@@ -123,6 +123,7 @@ Anti-Ice=As required
 Altimeters=Set by 18,000ft
 Passenger Briefing=Complete
 Seatbelt Sign & Landing Lights=Passenger safety & on by 10,000ft
+Tail Light=On if night
 --Before Landing--
 Landing Gear=Down, 3 green
 Speedbrakes=Retracted
