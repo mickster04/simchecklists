@@ -26,6 +26,7 @@ If you're on a touchscreen (recommended) just touch the item to cross and move t
 - Cessna 337 Skymaster (Thranda/X-Plane)
 - Cessna CJ4 (Citation)
 - Cessna 750 (Citation X)
+- Robin DR400/100 Cadet
 
 ## Checklist Files
 Checklist files are simple .txt files, the format is also very simple, basically 1 item per line, with a few exceptions:
@@ -46,6 +47,14 @@ The code was written in PHP and Vanilla Javascript, you need to use at least PHP
 No need to build anything, it runs straight from the server.
 
 ### Version History: 
+
+Version 1.1.2 (2024/06/25)
+- Fix: Issue #17 - double-clicking / double-tapping a sublist title, will automatically cross that entire sublist and move the highlight to first item of the next sublist, it will also auto-scroll to the next sublist.
+- Fix: Issue #21 - changes to the cache tested accordingly.
+- Fix: Issue #22 - the loop that generates the css color class had a logic error, fixed. it was in class checklist, method displayList($items).
+- Updated: Cessna Citation X Checklist (Lightdasher360).
+- Updated: Cesnns C337 Checklist (Lightdasher360).
+- Added: Robin DR400/100 Cadet Checklist by tibonev.
 
 Version 1.1.1 (2024/06/21)
 - Fix: Issue #18 - was missing a javascript call to a div.

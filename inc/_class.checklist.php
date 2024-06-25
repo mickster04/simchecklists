@@ -65,8 +65,23 @@ class checklist {
 			if(isset($it[1])) { $class = "items"; } 
 						
 			if($class == "title") { 
-				if($c == 0) { $class_use = "title green"; } else { $class_use = "title"; }
-				if($c == $l-1) { $class_use = "title blue"; } else { $class_use = "title"; }
+				
+				switch($c) { 
+					case 0: 
+						$class_use="title green";
+					break;
+					
+					case $l-1:
+						$class_use="title blue";
+					break;
+					
+					default:
+						$class_use="title";
+					break;
+				}
+				
+				if($c > 0) { echo '</div>'; } 
+				echo '<div class="sublist">';
 				echo '<div class="'.$class_use.'">'.str_replace("--", "", $it['0']).'</div>';
 			} else { 
 				echo '<div class="items">
