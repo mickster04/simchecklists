@@ -1,4 +1,4 @@
-BAe 146 (simplified)
+British Aerospace (BAe) 146 (simplified)
 --Flight Deck Safety--
 Gear Lever=Down
 Radar=Off 15up
