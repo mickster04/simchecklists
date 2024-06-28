@@ -46,12 +46,30 @@ All themes have both a dark and light version, inside the same file.
 The code was written in PHP and Vanilla Javascript, you need to use at least PHP7 and a browser with support for ECMAS2019.
 No need to build anything, it runs straight from the server.
 
+## Disclaimer
+None of the information or checklists in this application should be used for real-world flying. All the information here is for simulation purposes only!
+
+
 ### Version History: 
+
+Version 1.1.3 (2024/06/28)
+- Fix: Issue #17 - loaded JS may be stuck in local storage, added versioning to all JS and CSS files.
+- Fix: Issue #24 - loop checked and tested ok.
+- Fix: Issue #25 - simple logic change to avoid showing null.
+- Fix: Issue #26 - added a error handling routine.
+- New: Scratch pad, just draw/write whatever you need on it.
+- Added: Issue #23 - changed CSS to place the icons in a fixed column left of the screen if the screen width is up to 999px. from 1000px onwards, the old layout remains.
+- Added: Comms frequencies for airports in the icao window.
+- Added: METAR information for airports in the icao window.
+- Added: British Aerospace (BAe) 146 (simplified) by Lightdasher360.
+- Updated: Airbus320 Simplified Checklist (added procedure for the radios - required) (tibonev).
+- Removed: Airbus A320 (Asobo v1) checklist, it was redudant after the Airbus A320 (Simplified checklist) update.
+- Removed: redundant file assets/default.htm (the up-to-date version is assets/thm_default.thm).
 
 Version 1.1.2 (2024/06/25)
 - Fix: Issue #17 - double-clicking / double-tapping a sublist title, will automatically cross that entire sublist and move the highlight to first item of the next sublist, it will also auto-scroll to the next sublist.
 - Fix: Issue #21 - changes to the cache tested accordingly.
-- Fix: Issue #22 - the loop that generates the css color class had a logic error, fixed. it was in class checklist, method displayList($items).
+- Fix: Issue #24 - the loop that generates the css color class had a logic error, fixed. it was in class checklist, method displayList($items).
 - Updated: Cessna Citation X Checklist (Lightdasher360).
 - Updated: Cesnns C337 Checklist (Lightdasher360).
 - Added: Robin DR400/100 Cadet Checklist by tibonev.

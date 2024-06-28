@@ -20,11 +20,11 @@
 	
 	.spacer { height:20px; }
 	
-	.icons { 
-		display:flex;
-		justify-content: space-between;
-	}
+	.icons { display:flex; }
 	.icons div { cursor:pointer; }
+	
+	.green { color:<?PHP echo $theme->theme_value('dark_txt_green'); ?>; }
+	.blue { color:<?PHP echo $theme->theme_value('dark_txt_blue'); ?>; }
 			
 	.main-container {
 		width:100%;
@@ -55,7 +55,6 @@
 		padding-top:2%;
 		display:none;
 	}
-	.is-visible { display:block; }
 	
 	.icao-window .inner-icao { 
 		position:relative;
@@ -69,9 +68,35 @@
 		overflow: auto;
 	}
 	
-	.green { color:<?PHP echo $theme->theme_value('dark_txt_green'); ?>; }
+	.canvas_window { 
+		position:fixed;
+		width:100%;
+		height:100vh;
+		z-index:998;
+		padding-left:2%;
+		padding-top:2%;
+		display:none;
+	}
 	
-	.blue { color:<?PHP echo $theme->theme_value('dark_txt_blue'); ?>; }
+	.canvas_window .inner-canvas { 
+		position:relative;
+		width:90%;
+		height:90vh;
+		padding-left:10px;
+		padding-top:10px;
+		border-radius:5px;
+		background-color: <?PHP echo $theme->theme_value('dark_bg_highlight'); ?>;
+		color: <?PHP echo $theme->theme_value('dark_txt_color'); ?>;
+		overflow: auto;
+	}
+	
+	.canvas { 
+		width:96%;
+		height:80vh;
+		border:1px solid black;
+	}
+	
+	.is-visible { display:block; }
 		
 	.items {
 		position:relative;
@@ -100,6 +125,10 @@
 	.runway_navaid { width:25%; }
 	.runway_freq { width: 20%; }
 	.runway_surface {width:25%; }
+	.comms_number { width:20%; }
+	.comms_freq { width:20%; }
+	.comms_name { width:55%; }
+	.metar { width:90%; }
 	.new_line { clear:both; }
 		
 	.footer { 
@@ -129,6 +158,13 @@
 			color: <?PHP echo $theme->theme_value('light_txt_color'); ?>;
 		}
 		
+		.inner-canvas { 
+			background-color: <?PHP echo $theme->theme_value('light_bg_highlight'); ?>;
+			color: <?PHP echo $theme->theme_value('light_txt_color'); ?>;
+		}
+		
+		
+		
 		
 	}
 	
@@ -154,8 +190,27 @@
 			color: <?PHP echo $theme->theme_value('dark_txt_color'); ?>;
 		}
 		
+		.inner-canvas { 
+			background-color: <?PHP echo $theme->theme_value('dark_bg_highlight'); ?>;
+			color: <?PHP echo $theme->theme_value('dark_txt_color'); ?>;
+		}
+		
 		
 	}
 	
+	@media screen and (max-width:999px) { 
+		.icons { 
+			position:fixed;
+			left:1%;
+			top:5%;
+			flex-direction:column;
+		}
+	}
+	
+	@media screen and (min-width:1000px) { 
+		.icons { 
+			justify-content:space-between;
+		}
+	}
 	
 </style>

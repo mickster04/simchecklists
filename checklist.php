@@ -28,12 +28,10 @@ $items = $check->loadChecklist($list, $user);
 		
 		<?PHP require('icao.php'); ?>
 		
+		<?PHP require('scratch.php'); ?>
+		
 		<div class="main-container">
-			<div class="icons">
-				<div><a href="index.php"><?PHP $theme->theme_icon('back'); ?></a></div>
-				<div class="icao_open"><?PHP $theme->theme_icon('icao'); ?></div>
-				<div onclick="location.reload(true);"><?PHP $theme->theme_icon('refresh'); ?></div>
-			</div>
+			<?PHP require('icons.php'); ?>
 			
 			<div class="content">
 				<?PHP $check->displayList($items); ?>
@@ -41,11 +39,7 @@ $items = $check->loadChecklist($list, $user);
 			
 			<div class="spacer"></div>
 			
-			<div class="icons">
-				<div><a href="index.php"><?PHP $theme->theme_icon('back'); ?></a></div>
-				<div class="icao_open"><?PHP $theme->theme_icon('icao'); ?></div>
-				<div onclick="location.reload(true);"><?PHP $theme->theme_icon('refresh'); ?></div>
-			</div>
+			<?PHP require('icons.php'); ?>
 			
 			<div class="spacer"></div>
 			
@@ -53,7 +47,8 @@ $items = $check->loadChecklist($list, $user);
 		</div>
 	</body>
 	
-	<script src="assets/checks.js"></script>
-	<script src="assets/icao.js"></script>
+	<script src="assets/checks.js?v=<?PHP echo time(); ?>"></script>
+	<script src="assets/icao.js?v=<?PHP echo time(); ?>"></script>
+	<script src="assets/scratchpad.js?v=<?PHP echo time(); ?>"></script>
 
 </html>

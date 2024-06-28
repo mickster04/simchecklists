@@ -16,7 +16,14 @@
 			
 			Navigation:
 			<div class="runways"></div>
+			<div class="spacer"></div>
 			
+			Communications:
+			<div class="comms"></div>
+			<div class="spacer"></div>
+			
+			METAR: 
+			<div class="metar"></div>
 			<div class="spacer"></div>
 		</div>
 	</div>
