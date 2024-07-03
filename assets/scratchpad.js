@@ -74,10 +74,13 @@ function clean() {
 function canvas_open() { 
 	document.getElementsByClassName("canvas_window")[0].classList.add("is-visible");
 	
-	ctx.canvas.width = document.getElementsByClassName('canvas')[0].offsetWidth;
-	ctx.canvas.height = document.getElementsByClassName('canvas')[0].offsetHeight;
-	canvas.setAttribute('width', document.getElementsByClassName('canvas')[0].offsetWidth);
-	canvas.setAttribute('height',document.getElementsByClassName('canvas')[0].offsetHeight); 
+	if(!document.getElementsByClassName("canvas_window")[0].classList.contains("opened")) { 
+		ctx.canvas.width = document.getElementsByClassName('canvas')[0].offsetWidth;
+		ctx.canvas.height = document.getElementsByClassName('canvas')[0].offsetHeight;
+		canvas.setAttribute('width', document.getElementsByClassName('canvas')[0].offsetWidth);
+		canvas.setAttribute('height',document.getElementsByClassName('canvas')[0].offsetHeight);
+		document.getElementsByClassName("canvas_window")[0].classList.add("opened"); 
+	}
 		
 }
 

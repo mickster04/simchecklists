@@ -10,6 +10,9 @@
 	<!-- iOS Safari -->
 	<meta name="apple-mobile-web-app-status-bar-style" content="<?PHP echo $theme->theme_value('bar_bg_color'); ?>">
 	
+	<!-- Favicon -->
+	<link rel="icon" type="image/png"  href="assets/icon.png">
+	
 	<?PHP require('assets/css.php'); ?> 
 	
 </head>

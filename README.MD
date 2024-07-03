@@ -13,6 +13,9 @@ Check the live version of this app @ [checklist.classicgames.com.br](http://chec
 ![01](http://classicgames.com.br/temp/simcheck01.png) ![02](http://classicgames.com.br/temp/simcheck02.png)
 ![03](http://classicgames.com.br/temp/simcheck03.png) 
 
+## Disclaimer
+None of the information or checklists in this application should be used for real-world flying. All the information here is for simulation purposes only!
+
 ## Usage
 Select or upload the desired checklist, click on a item to automatically cross it, mark as done and highlight the next item. 
 If you're on a touchscreen (recommended) just touch the item to cross and move to the next.
@@ -21,6 +24,7 @@ If you're on a touchscreen (recommended) just touch the item to cross and move t
 - Airbus A320neo 
 - Beechcraft Baron 58 
 - Beechcraft Bonanza G36
+- British Aerospace (BAe) 146
 - Cessna 152
 - Cessna 172 Skyhawk (G530 Version)
 - Cessna 337 Skymaster (Thranda/X-Plane)
@@ -46,11 +50,12 @@ All themes have both a dark and light version, inside the same file.
 The code was written in PHP and Vanilla Javascript, you need to use at least PHP7 and a browser with support for ECMAS2019.
 No need to build anything, it runs straight from the server.
 
-## Disclaimer
-None of the information or checklists in this application should be used for real-world flying. All the information here is for simulation purposes only!
-
-
 ### Version History: 
+Version 1.1.4 (2024/07/03)
+- Fix: Issue #17 - tested on multiple devices ok.
+- Fix: Issue #28 - add a flag to know when the canvas window is being opened/setup for the first time in session.
+- Test Fix: Issue #27 - changed CSS for the scratch_window class and inner_canvas class.
+- Added: Favicon for HTML.
 
 Version 1.1.3 (2024/06/28)
 - Fix: Issue #17 - loaded JS may be stuck in local storage, added versioning to all JS and CSS files.
