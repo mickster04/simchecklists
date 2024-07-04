@@ -51,6 +51,15 @@ The code was written in PHP and Vanilla Javascript, you need to use at least PHP
 No need to build anything, it runs straight from the server.
 
 ### Version History: 
+Version 1.1.5 (2024/07/04)
+- Fix: Issue #27 - changed inner div height from % of the screen to % of the parent element.
+- Test Feature: Issue #22 - using wakelock api with the permission for self set into the header, need further testing, tested on android on chrome and adblock browsers.
+- Added: Feature #29 - type pad, a notepad to use with the device keyboard, instead of mouse/finger.
+- Added: SVG Icon for type pad.
+- Updated: Cessna 152 Checklist (removed reference to a missing instrument (ampmeter)).
+- Updated: Airbus A320neo Checklist (fixed typo on item on the shutdown sublist).
+- Updated: Tweaked the visual aspect of all inner windows to better fit the themes.
+
 Version 1.1.4 (2024/07/03)
 - Fix: Issue #17 - tested on multiple devices ok.
 - Fix: Issue #28 - add a flag to know when the canvas window is being opened/setup for the first time in session.

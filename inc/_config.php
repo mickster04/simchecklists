@@ -6,10 +6,11 @@ session_start();
 header("Cache-Control: no-cache, no-store, must-revalidate"); // HTTP 1.1.
 header("Pragma: no-cache"); // HTTP 1.0.
 header("Expires: 0"); // Proxies.
+header("Permissions-Policy:screen-wake-lock=(self)");
 
 if(isset($_POST['theme'])) { $_SESSION['theme'] = substr($_POST['theme'],6); }
 $app_title = "SimChecklists";
-$app_version = "1.1.3";
+$app_version = "1.1.5";
 require_once('inc/_class.checklist.php');
 require_once('inc/_class.theme.php');
 $theme = new theme();

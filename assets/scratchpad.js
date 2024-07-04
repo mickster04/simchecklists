@@ -12,9 +12,6 @@ canvas.addEventListener('mouseup', stop);
 canvas.addEventListener('touchstart', touch_start);
 canvas.addEventListener('touchend', stop);
 
-
-
-
 document.getElementById('clean').addEventListener('click', clean);
 
 function touch_start(event) {
@@ -48,7 +45,6 @@ function mouse_start(event) {
 function mouse_reposition(event) {
 	coord.x = event.clientX - canvas.offsetLeft - (document.getElementsByClassName('canvas')[0].offsetWidth *  0.02);
 	coord.y = event.clientY - canvas.offsetTop  -  (document.getElementsByClassName('canvas')[0].offsetHeight * 0.02);
-	//console.log("x:"+coord.x+" y:"+coord.y);
 }
 
 function mouse_draw(event) {

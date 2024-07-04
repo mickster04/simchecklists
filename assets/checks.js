@@ -52,7 +52,6 @@ function subcheckcross() {
 	
 	for(i = 0; i < itemList.length; i++) { 
 		if(!itemList[i].classList.contains('items-done')) { 
-			//console.log(itemList[i].parentNode);
 			itemList[i].parentNode.classList.add('highlight');
 			break;
 		}
@@ -68,7 +67,6 @@ for (var i = 0; i < itemsList.length; i++) {
 	itemsList[i].addEventListener('touchend', function(event) { 
 		touchendX = event.changedTouches[0].screenX;
 		if(touchstartX > touchendX) {
-			console.log(touchstartX - touchendX);
 			if( (touchstartX - touchendX) > width) { 
 				this.querySelector(".state").classList.remove('state-done');
 				this.querySelector(".strike").style.opacity = "0";

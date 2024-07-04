@@ -92,9 +92,42 @@
 	
 	.canvas { 
 		width:96%;
-		height:80vh;
-		border:1px solid black;
+		height:87%;
+		border:2px solid black;
+		border-radius:5px;
 	}
+
+	.writer_window { 
+		position:fixed;
+		width:100%;
+		height:100vh;
+		z-index:998;
+		padding-left:2%;
+		padding-top:2%;
+		display:none;
+	}
+	
+	.writer_window .inner-writer { 
+		position:relative;
+		width:90%;
+		height:90vh;
+		padding-left:10px;
+		padding-top:10px;
+		border-radius:5px;
+		background-color: <?PHP echo $theme->theme_value('dark_bg_highlight'); ?>;
+		color: <?PHP echo $theme->theme_value('dark_txt_color'); ?>;
+		overflow: auto;
+	}
+
+	.writer_pad { 
+		height:85%;
+		width:94%;
+		background-color:rgba(0,0,0,0);
+		color:<?PHP echo $theme->theme_value('dark_txt_color'); ?>;
+		border:2px solid black;
+		border-radius:5px;
+	}
+
 	
 	.is-visible { display:block; }
 		
@@ -162,10 +195,11 @@
 			background-color: <?PHP echo $theme->theme_value('light_bg_highlight'); ?>;
 			color: <?PHP echo $theme->theme_value('light_txt_color'); ?>;
 		}
-		
-		
-		
-		
+
+		.inner-writer { 
+			background-color: <?PHP echo $theme->theme_value('light_bg_highlight'); ?>;
+			color: <?PHP echo $theme->theme_value('light_txt_color'); ?>;
+		}
 	}
 	
 	@media (prefers-color-scheme: light) {
@@ -194,8 +228,11 @@
 			background-color: <?PHP echo $theme->theme_value('dark_bg_highlight'); ?>;
 			color: <?PHP echo $theme->theme_value('dark_txt_color'); ?>;
 		}
-		
-		
+
+		.inner-writer { 
+			background-color: <?PHP echo $theme->theme_value('dark_bg_highlight'); ?>;
+			color: <?PHP echo $theme->theme_value('dark_txt_color'); ?>;
+		}
 	}
 	
 	@media screen and (max-width:999px) { 
