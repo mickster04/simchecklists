@@ -25,6 +25,7 @@ If you're on a touchscreen (recommended) just touch the item to cross and move t
 - Beechcraft Baron 58 
 - Beechcraft Bonanza G36
 - British Aerospace (BAe) 146
+- Boeing 737-800x (Zibo)
 - Cessna 152
 - Cessna 172 Skyhawk (G530 Version)
 - Cessna 337 Skymaster (Thranda/X-Plane)
@@ -51,6 +52,13 @@ The code was written in PHP and Vanilla Javascript, you need to use at least PHP
 No need to build anything, it runs straight from the server.
 
 ### Version History: 
+Version 1.1.6 (2024/07/10)
+- Fix: Issue #22 - tested on more devices, no error.
+- Test Fix: Issue #30 - changed the code to record what is drawn on the scratch into a temp location into memory, resize and then re-draw, it doesn't scale, so things written outside of the new size are lost.
+- Updated: BAe 146 (simplified) checklist by Lightdasher360.
+- Added: Boeing 737-800 (Zibo) checklist by tibonev.
+- Renamed: lists/a320neo_simple_tib.txt to lists/a320neo_simple.txt
+
 Version 1.1.5 (2024/07/04)
 - Fix: Issue #27 - changed inner div height from % of the screen to % of the parent element.
 - Test Feature: Issue #22 - using wakelock api with the permission for self set into the header, need further testing, tested on android on chrome and adblock browsers.

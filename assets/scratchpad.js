@@ -83,3 +83,10 @@ function canvas_open() {
 function canvas_close() { 
 	document.getElementsByClassName("canvas_window")[0].classList.remove("is-visible");
 }
+
+screen.orientation.addEventListener("change", function(e) {
+    temp = ctx.getImageData(0,0,canvas.width,canvas.height);
+	ctx.canvas.width = document.getElementsByClassName('canvas')[0].offsetWidth;
+	ctx.canvas.height = document.getElementsByClassName('canvas')[0].offsetHeight;
+	ctx.putImageData(temp,0,0)
+});
