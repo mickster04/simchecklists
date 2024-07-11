@@ -5,6 +5,9 @@ Dome Light=ON IF NEEDED
 Battery=ON
 Grd Power=ON
 Sdby Power=ON
+POS Lights=STEADY
+Seat Belts=ON
+Logo Lights=ON
 APU=ON (WAIT FOR LP WARN)
 APU Start=HOLD UNTIL 50% EGT
 APU Gen Bus Light=ON
@@ -16,7 +19,9 @@ IRS 2=NAV
 FMC=SET IRS POSITION
 APU Bleed=ON
 Fuel Pumps=ON
+Transponder=SET
 --Startup--
+Anti-Coll Lights=ON
 Ignition=Eng 2
 Engine 2 Starter=GRD
 Engine 2=Fuel on 25% N1
@@ -28,20 +33,24 @@ Gen 2=ON
 Gen 1=ON
 Apu=OFF
 Apu Bleed=OFF
---Pre Flight--
+--Taxi--
 Packs=ON
+Wing Lights=ON
 Set Cruise Altitude=ON
 Emergency Light Guard=ON
 Window Heat=ON
 Probe Heat=ON
 Yaw Damper=ON
 Hydraulic Pumps=ON
-Lights=ON
 Set FMC=DONE
 F/D Left=ON
 A/T Arm Left=ON
 F/D Right=ON 
 --Take Off--
+AutoBrake=RTO
+Landing Lights=ON
+Strobe Lights=ON
+Transponder=TA/RA
 Flaps=SET
 NWS Guard=ON
 Configure AP=DONE
@@ -56,12 +65,10 @@ FL180=0.67 MACH
 FL120=280 KIAS
 Speed=250 KIAS BELOW 10000ft
 Altimeter=RESET TO LOCAL
-Landing Lights=ON
+Landing Lights=ON below 10000ft
 --Approach--
 Seat Belts=ON
 Speed=210kts
-Landing Lights=ON
-Taxi Lights=ON
 Gnd Spoilers=ARM
 Auto Brake=SET
 Flaps=Flaps 1
@@ -76,4 +83,32 @@ Speed=140kts
 --Landing--
 On Touchdown=Reverse Thrust
 At 60kts=Reverse Thrust OFF
---Checklist by tibonev--
+--After Landing / Taxi--
+Landing Lights=OFF
+APU=ON (wait for LP)
+APU=START
+APU Bleed=ON
+Flaps=RETRACTED
+Spoilers=RETRACTED
+--Shutdown--
+Parking Brake=SET
+APU Gen=ON 
+Engine 2 Fuel=CUTOFF
+Engine 1 Fuel=CUTOFF
+Transponder=STD BY
+Ground Contact=DONE
+Ground Power=CONNECTED
+Seat Belts=OFF
+Anti-Coll Lights=OFF
+Strobe Lights=OFF
+Taxi Lights=OFF
+POS Lights=OFF
+APU=OFF
+Doors=OPEN 
+Fuel Pumps=OFF 
+Hydraulic Pumps=OFF
+Apu Bleed=OFF
+F/D Left=OFF
+F/D Right=OFF
+A/T Arm=OFF
+Checklist by tibonev

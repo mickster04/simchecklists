@@ -32,6 +32,8 @@ If you're on a touchscreen (recommended) just touch the item to cross and move t
 - Cessna CJ4 (Citation)
 - Cessna 750 (Citation X)
 - Robin DR400/100 Cadet
+- Sukhoi Su25-t Frogfoot
+- Sukhoi Su27 / Su33 Flanker
 
 ## Checklist Files
 Checklist files are simple .txt files, the format is also very simple, basically 1 item per line, with a few exceptions:
@@ -52,6 +54,11 @@ The code was written in PHP and Vanilla Javascript, you need to use at least PHP
 No need to build anything, it runs straight from the server.
 
 ### Version History: 
+Version 1.1.7 (2024/07/11)
+- Added: Sukhoi Su-25t (DCS) Checklist by tibonev.
+- Added: Sukhoi Su-27 / Su-33 (DCS) checklist by tibonev.
+- Updated: Boeing 737-800 checklist by tibonev.
+
 Version 1.1.6 (2024/07/10)
 - Fix: Issue #22 - tested on more devices, no error.
 - Test Fix: Issue #30 - changed the code to record what is drawn on the scratch into a temp location into memory, resize and then re-draw, it doesn't scale, so things written outside of the new size are lost.
