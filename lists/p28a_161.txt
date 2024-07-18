@@ -36,14 +36,15 @@ Throttle=Adjust
 --After Start--
 Mixture=Lean for Ground ops
 Throttle=800-1200RPM
+Fuel Pump=Off
 Oil=Pressure Chkd
 ALTR & Avionics=On
 Lights=As req
 --Pre-Taxi--
-Altimeter=Set
-DG/HSI=Set to magnetic compass
 Nav/Com Radio=Chkd & set
 Xponder=Set, STBY
+Altimeter=Set
+DG/HSI=Set to magnetic compass
 Flight Plan=Set
 HSI/OBS=Select nav source
 Parking Brake=Release
@@ -65,8 +66,8 @@ Throttle=2000RPM
 Magnetos=Check both(Max 175RPM drop, 75EGT rise)
 Carburetor Heat=Chkd (50RPM drop)
 Vaccum=4.8-5.1inHG
+Mixture=Lean
 Throttle=Retard
-Fuel Pump=Off, fuel press/temp Chkd
 Annunciator Panel=Press to test
 --Takeoff--
 Doors=Latched
@@ -104,9 +105,9 @@ Lights=As req
 Xponder=STBY
 --Shutdown--
 Avionics=Off
-Electrical Switches & Lights=Off
 Throttle=Closed
 Mixture=Idle cutoff
+Electrical Switches & Lights=Off
 Magnetos=Off
 Fuel Selector=Off
 ALTR & Batt=Off
