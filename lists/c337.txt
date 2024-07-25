@@ -1,7 +1,7 @@
 Cessna 337 Skymaster (Thranda/X-Plane)
 --Preflight--
 Weight & Balance=Complete
-Tie-Downs and Chocks=Removed
+Tie-Downs/Covers/Chocks=Removed
 --Before Engine Start--
 Brakes=Test & Set
 Master & Alternator Switches=On
@@ -56,9 +56,10 @@ Rear Engine=Running, check in green ranges
 Flight Controls=Check Free & Correct
 Elevator/Rudder Trim=Set to T/O
 Mixtures=Rich
+Propellers=High RPM
 Throttle=1800RPM
 Magnetos=Check (50 RPM max drop differential)
-Propellers=Check feathering to 1200RPM; return to high RPM
+Propellers=Check feathering, return to high RPM
 Alternators=Check
 Engine Instruments=Check
 Suction Gauge=Check Sources & Suction (5.0-5.4in/hg)
@@ -105,13 +106,13 @@ Landing Gear & Wing Flaps=Retract (after obstacles are cleared)
 Airspeed=120-140MPH
 Power=24in & 2600RPM
 Mixtures=Lean to 78LBS/HR fuel flow
-Cowl Flaps=Open as required (monitor cylinder head temps)
+Cowl Flaps=Open as req (monitor cylinder head temps)
 Strobe Lights=Off
 --Maximum Performance Climb--
 Airspeed=114MPH (sea level) to 108MPH (10,000ft)
 Power=Full throttle & 2800RPM
 Mixtures=Lean for altitude per fuel flow indicator placard
-Cowl Flaps=Open as required (monitor cylinder heat temp)
+Cowl Flaps=Open as req (monitor cylinder heat temp)
 Strobe Lights=Off
 --Cruising--
 Power=15-25in.MP & 2200-2600RPM
@@ -121,7 +122,7 @@ Mixtures=Lean for cruise fuel flow
 Landing Lights=Off
 Descent & Approach briefing=Complete 5min prior to descent
 --Descent (If in cold weather, observe engine temps and maintain adequate power)--
-Mixtures=Enrichen as required
+Mixtures=Enrichen as req
 Power=As desired
 Cowl Flaps=Closed
 Wing Flaps=As desired (Up to 1/3 down below 160MPH)
