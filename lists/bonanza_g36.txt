@@ -31,6 +31,8 @@ Magnetos=BOTH
 Avionics=ON
 --Before Taxi--
 Flight Controls=CHECKED
+Test Magnetos=DONE
+Test Flaps=DN/UP
 Nav Lights=ON
 Taxi Lights=ON
 Altimeter=SET

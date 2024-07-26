@@ -26,12 +26,13 @@ $items = $check->loadChecklist($list, $user);
 	<?PHP require('inc/_head.php'); ?>
 	<body>
 		
-		<?PHP require('icao.php'); ?>
-		
-		<?PHP require('scratch.php'); ?>
-
-		<?PHP require('writer.php'); ?>
-		
+		<?PHP 
+			require('icao.php'); 
+			require('scratch.php'); 
+			require('writer.php'); 
+			require('chrono.php');
+		?>
+	
 		<div class="main-container">
 			<?PHP require('icons.php'); ?>
 			
@@ -54,5 +55,6 @@ $items = $check->loadChecklist($list, $user);
 	<script src="assets/scratchpad.js?v=<?PHP echo time(); ?>"></script>
 	<script src="assets/typepad.js?v=<?PHP echo time(); ?>"></script>
 	<script src="assets/wakelock.js?v=<?PHP echo time(); ?>"></script>
+	<script src="assets/chrono.js?v=<?PHP echo time(); ?>"></script>
 
 </html>

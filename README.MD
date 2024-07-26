@@ -31,6 +31,7 @@ If you're on a touchscreen (recommended) just touch the item to cross and move t
 - Cessna 337 Skymaster (Thranda/X-Plane)
 - Cessna CJ4 (Citation)
 - Cessna 750 (Citation X)
+- Piper Warrior 2 (JustFlight)
 - Robin DR400/100 Cadet
 - Sukhoi Su25-t Frogfoot
 - Sukhoi Su27 / Su33 Flanker
@@ -54,6 +55,16 @@ The code was written in PHP and Vanilla Javascript, you need to use at least PHP
 No need to build anything, it runs straight from the server.
 
 ### Version History: 
+Version 1.1.8 (2024/07/25)
+- Added: Chronometer functionality.
+- Added: Chronometer SVG icon.
+- Added: new font (chrono.ttf - public domain)
+- Added: Piper Warrior 2 checklist by Lightdasher360.
+- Updated: Airbus A320neo checklist by tibonev.
+- Updated: Beechcraft Bonanza G36 checklist by tibonev.
+- Updated: Cessna Citation X checklist by Lightdasher360.
+- Updated: Cessna Skymaster 337 checklist by Lightdasher360.
+
 Version 1.1.7 (2024/07/11)
 - Added: Sukhoi Su-25t (DCS) Checklist by tibonev.
 - Added: Sukhoi Su-27 / Su-33 (DCS) checklist by tibonev.

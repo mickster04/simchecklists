@@ -3,6 +3,11 @@
 		font-family: myterminal;
 		src: url('assets/<?PHP echo $theme->theme_value('font'); ?>');
 	}
+
+	@font-face { 
+		font-family: chrono;
+		src: url('assets/chrono.ttf');
+	}
 			
 	body { 
 		background-color:<?PHP echo $theme->theme_value('dark_bg_color'); ?>;
@@ -128,7 +133,38 @@
 		border-radius:5px;
 	}
 
+	.chrono_window { 
+		position:fixed;
+		width:100%;
+		height:100vh;
+		z-index:998;
+		padding-left:2%;
+		padding-top:2%;
+		display:none;
+	}
 	
+	.chrono_window .inner-chrono { 
+		position:relative;
+		width:90%;
+		height:90vh;
+		padding-left:10px;
+		padding-top:10px;
+		border-radius:5px;
+		background-color: <?PHP echo $theme->theme_value('dark_bg_highlight'); ?>;
+		color: <?PHP echo $theme->theme_value('dark_txt_color'); ?>;
+		overflow: auto;
+	}
+
+	.chrono_display {
+		display:flex;
+		justify-content:center;
+		align-items:center;
+	}
+	.chrono_display span {
+		font-size:10vh;
+		font-family:chrono;
+	}
+
 	.is-visible { display:block; }
 		
 	.items {
@@ -136,6 +172,11 @@
 		display:flex; 
 		justify-content:space-between;
 		padding:5px 10px 5px 10px;
+	}
+
+	.spread_items { 
+		justify-content:space-around;
+		padding:5px 10px 5px 10px;		
 	}
 	
 	.strike { 
