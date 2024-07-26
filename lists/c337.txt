@@ -10,8 +10,7 @@ Voltage Regulator Selector Switch=REG 1/2 POSITION (as desired)
 Landing Gear=Handle Down, Neutral, and Green Down Light on
 Landing Gear Lights and Horn=Push to test
 Cowl Flaps=Open
-Fuel Selectors-Front Engine=Left Main
-Fuel Selectors-Rear Engine=Right Main
+Fuel Selectors=Front to left main, rear to righ main
 Radios & Electrical Equipment=Off
 --Starting Front Engine--
 Beacon light=On
@@ -67,13 +66,13 @@ Throttles=Closed (check idle)
 Flight Instruments & Radios=Set
 Optional Autopilot=Off
 Cabin Door & Windows=Closed & locked
-Taxi Lights=Off
-Landing/Strobe Lights=On
-Transponder=ALT
 Parking Brake=Release
 --Normal Take-Off--
-Wing Flaps=Up to 1/3 Down
+Taxi Lights=Off
+Landing/Strobe Lights=On
 Cowl Flaps=Open
+Transponder=ALT
+Wing Flaps=Up to 1/3 Down
 Mixtures=Rich
 Power=Advance Right Throttle, confirm engine instruments live, then both Full Throttle & 2800RPM
 Elevator Control=Rotate @75-80MPH
@@ -128,8 +127,6 @@ Cowl Flaps=Closed
 Wing Flaps=As desired (Up to 1/3 down below 160MPH)
 Landing Lights=On
 --Before Landing--
-Fuel Selectors-Front Engine=Left main
-Fuel Selectors-Rear Engine=Right main
 Landing Gear=Down (below 160MPH)
 Instruments=Set
 Landing Gear Light=Green
