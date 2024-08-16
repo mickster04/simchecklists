@@ -1,0 +1,110 @@
+TBM900
+--Cockpit Setup--
+Maintenance Log=Chkd
+Parking Brake=Set
+Weight & Balance=Complete
+Chocks, Ties/Caps, Covers=Removed, fuel caps closed
+Fuel Supply=Selected
+Documents & Charts=Chkd
+All overhead switches=Down except ignition(on)
+Master Electrical Disconnect=Up
+Source=As req
+Nav Light=On
+Warnings=Confirmed
+Systems Self Tests=Complete
+Landing Gear Lights=Tested
+--Engine Start--
+Aux BP=On
+Prop Area=Clear
+Timer=Start
+Starter=Hold 2sec until self-catch, then release
+Engine Parameters=Monitor, abort for high ITT
+Oil Pressure=Rising
+NG 13%=Power lever to low idle
+NG 30% Within 30Sec=Continue
+NG 52%=Power lever to flight idle
+NG 69%=Good engine start confirmed
+Generator=Main
+Aux BP=Auto
+Fuel Sel=Auto
+AP/Trims=On
+Oxygen=As req
+ECS Bleed=Auto
+AC=As desired
+Inertial Seperator=On
+Source=Battery
+--After Start--
+Nav/Comm Radios=Set
+Altimeter=Set
+Flight Plan=Set
+Flight Director, Vspeed, Altitude=On and preset
+Heading Indicator=Set to RWY
+Departure Briefing=Complete
+--Taxi--
+Area=Clear
+Exterior Lights=Taxi
+Xponder=On
+Brakes=Engaged
+Parking Brake=Off
+Brakes=Release pressure
+Throttle=Toward zero Thrust
+Emergency Procedure Briefing=Complete
+--Take-Off--
+Flaps=Set
+Trim=Set T/O
+Xponder=Alt
+Exterior Lights=Landing & strobes on
+--After Take-Off--
+Yaw Damper=On
+Landing Gear=Up
+Flaps= Up
+Strobes=Off
+Autopilot=As desired
+--Climb--
+Inertial Seperator=As req
+Pitot Heat=As req
+Engine Instruments=Monitor
+Above FL180=Altimeter set & landing lights off
+--Cruise--
+Power=Set
+Engine Instruments=Monitor
+Descent & Approach Briefing=Complete 5min prior to descent
+--Descent--
+Power=As req
+Below FL180=Altimeter set & landing lights on
+Below 10,000ft=Inertial seperator on
+--Approach--
+Landing Gear=Down
+Flaps=Down
+Strobes=On
+Autopilot=Off
+TOGA=Set
+--After Landing--
+Power Lever=Flight idle
+Timer=Start (2min engine idle)
+Flaps=Up
+Trim=Set T/O
+Pitot Heat=Off
+Xponder=On
+Yaw Damper & Flight Director=Off
+Exterior Lights=Taxi on & strobes off
+--Shutdown--
+Exterior Lights=Off
+Brakes=Applied
+Parking Brake=On
+AP/Trims=On
+Fuel Sel=Man
+Oxygen=Off
+AC=Off
+ECS Bleed=Off/rst
+Power Lever=Low Idle
+Engine Instruments Stabilized Idle=power lever to cutoff
+Aux BP=Off
+Generator=Off
+Inertial Seperator=Off
+Nav Lights=Off
+Source=Off
+Master Electrical Disconnect=Down
+--Securing Aircraft--
+Chocks, Ties/Caps, Covers=Set
+--Checklist by Lightdasher360, thanks to official TBM videos and pilots sharing exp & procs online!--
