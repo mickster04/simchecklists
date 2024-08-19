@@ -14,6 +14,7 @@ Warnings=Confirmed
 Systems Self Tests=Complete
 Landing Gear Lights=Tested
 --Engine Start--
+ITT=Good (Motoring proc needed for ITT>155)
 Aux BP=On
 Prop Area=Clear
 Timer=Start
@@ -54,6 +55,7 @@ Flaps=Set
 Trim=Set T/O
 Xponder=Alt
 Exterior Lights=Landing & strobes on
+Power=Set (TRQ under 2250/ITT under 800)
 --After Take-Off--
 Yaw Damper=On
 Landing Gear=Up
@@ -80,7 +82,7 @@ Strobes=On
 Autopilot=Off
 TOGA=Set
 --After Landing--
-Power Lever=Flight idle
+Power Lever=Beta
 Timer=Start (2min engine idle)
 Flaps=Up
 Trim=Set T/O
@@ -92,7 +94,7 @@ Exterior Lights=Taxi on & strobes off
 Exterior Lights=Off
 Brakes=Applied
 Parking Brake=On
-AP/Trims=On
+AP/Trims=Off
 Fuel Sel=Man
 Oxygen=Off
 AC=Off
@@ -107,4 +109,4 @@ Source=Off
 Master Electrical Disconnect=Down
 --Securing Aircraft--
 Chocks, Ties/Caps, Covers=Set
---Checklist by Lightdasher360, thanks to official TBM videos and pilots sharing exp & procs online!--
+--Checklist by Lightdasher360 using the Hot Start TBM900 for X-Plane 11, thanks to official Daher TBM videos and pilots sharing exp & procs online!--
