@@ -94,6 +94,7 @@ Exterior Lights=Taxi on & strobes off
 Exterior Lights=Off
 Brakes=Applied
 Parking Brake=On
+Xponder=STBY
 AP/Trims=Off
 Fuel Sel=Man
 Oxygen=Off
