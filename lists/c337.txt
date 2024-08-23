@@ -61,11 +61,11 @@ Flight Instruments & Radios=Set
 Optional Autopilot=Off, altiude preselect
 Cabin Door & Windows=Closed & locked
 Run Up=Complete, return engine controls to field elvation idle
-Parking Brake=Release
 --Normal Take-Off--
+Parking Brake=Release
 Taxi Lights=Off
 Landing/Strobe Lights=On
-Xponder=ALT
+Xponder=ALT, begin flight time
 Wing Flaps=Up to 1/3 Down
 Mixtures=Rich
 Engine Instruments=Live for both engines
@@ -76,9 +76,10 @@ Landing Gear=Retract when clear 1000ft
 Climb Speed=110-120MPH
 Wing Flaps=Retract (if extended)
 --Gravel/Cinder Field Take-Off--
+Parking Brake=Release
 Taxi Lights=Off
 Landing/Strobe Lights=On
-Xponder=ALT
+Xponder=ALT, begin flight time
 Wing Flaps=1/3 Down
 Mixtures=Rich
 Power=Full Throttle & 2800RPM rear-engine only
@@ -88,9 +89,10 @@ Brakes=Apply momentarily when airborne
 Landing Gear & Wing Flaps=Retract in climb out
 Climb Speed=110-120MPH
 --Maximum Performance Take-Off--
+Parking Brake=Release
 Taxi Lights=Off
 Landing/Strobe Lights=On
-Xponder=ALT
+Xponder=ALT, begin flight time
 Wing Flaps=1/3 Down
 Brakes=Apply
 Mixtures=Rich
@@ -142,7 +144,7 @@ Braking=Minimum required
 --Taxi In--
 Wing Flaps=Retract
 Elevator/Rudder Trim=Reset to T/O position
-Xponder=On
+Xponder=On, end flight time
 Landing/Strobe Lights=Off
 Taxi Lights=On
 --Securing aircraft--
