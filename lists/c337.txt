@@ -2,34 +2,28 @@ Cessna 337 Skymaster (Thranda/X-Plane)
 --Preflight--
 Weight & Balance=Complete
 Tie-Downs/Covers/Chocks=Removed
+Documents=Secured
 --Before Engine Start--
 Brakes=Test & Set
-Master & Alternator Switches=On
-NAV light=On
-Voltage Regulator Selector Switch=REG 1/2 POSITION (as desired)
-Landing Gear=Handle Down, Neutral, and Green Down Light on
-Landing Gear Lights and Horn=Push to test
+Batt/Altr=On
+Voltage Regulator Selector=As desired
+NAV Light=On
+Landing Gear=Handle down, neutral, and green down light illum
+Landing Gear Lights/Horn=Hold to test
 Cowl Flaps=Open
-Fuel Selectors=Front to left main, rear to righ main
+Fuel Selectors=Front to left main, rear to right main
 Radios & Electrical Equipment=Off
---Starting Front Engine--
+--Engine Start--
 Beacon light=On
 Left Mixture=Rich
 Left Propeller=High RPM
 Left Throttle=Cracked (one inch)
-Left Auxiliary Fuel Pump Switch=On Low
+Left Auxiliary Fuel Pump=Low
 Open Window=Clear prop!!
-Front/Left Engine Ignition/Starter Switch=Start (when fuel flow is steady at 10-25lbs/hr)
-Left Auxiliary Fuel Pump Switch=Off
-Left Oil Pressure Gauge=Check in green arc range within 30 seconds
---Starting Rear Engine (if long taxi @ hot/high airfield, consider delayed Rear Engine startup until 10min before Take-Off)--
-Right Mixture=Rich
-Right Propeller=High RPM
-Right Throttle=Cracked (one inch)
-Right Auxiliary Fuel Pump Switch=On Low
-Rear Engine Ignition/Starter Switch=Start (when fuel flow is steady at 10-25lbs/hr)
-Right Auxiliary Fuel Pump Switch=Off
-Right Oil Pressure Gauge=Check in green arc range within 30 seconds
+Front Engine Ignition=Start (when fuel flow steady 10-25lbs/hr)
+Left Auxiliary Fuel Pump=Off
+Left Oil Pressure Gauge=Check in green arc within 30 seconds
+Front Engine OK=Repeat rear engine (consider delay @ hot/high fields)
 --After Engine Start--
 Mixtures=Lean for field elevation per fuel flow indicator placard
 Avionics=On
@@ -39,63 +33,69 @@ Altimeter=Set
 DG/HSI=Set to magnetic compass
 Heading Indicator=Set to RWY
 Nav/Comm radios=Set, mic checked
-Transponder=Set Squawk, to STBY
+Xponder=Set Squawk, stby
 Taxi Lights=On
---Taxi (If loose gravel/FOD present, consider rear-engine taxi)--
+--Taxi Out (If loose gravel/FOD present, consider rear-engine taxi)--
+Xponder=On
 Attitude Indicator=Stable
 Heading Indicator=Correct, verify against mag compass
 Turn Rate Indicator & Slip/Skid=Correct
 Magnetic Compass=Swings freely
 Brakes=Check
-Departure briefing=Complete
---Before Take-Off--
+Departure Briefing=Complete
+--Run Up--
 Parking Brake=Set
-Cowl Flaps=Open
 Rear Engine=Running, check in green ranges
 Flight Controls=Check Free & Correct
 Elevator/Rudder Trim=Set to T/O
 Mixtures=Rich
 Propellers=High RPM
-Throttle=1800RPM
+Throttles=1800RPM
 Magnetos=Check (50 RPM max drop differential)
 Propellers=Check feathering, return to high RPM
 Alternators=Check
 Engine Instruments=Check
 Suction Gauge=Check Sources & Suction (5.0-5.4in/hg)
-Throttles=Closed (check idle)
+Throttles=Close (check idle)
 Flight Instruments & Radios=Set
-Optional Autopilot=Off
+Optional Autopilot=Off, altiude preselect
 Cabin Door & Windows=Closed & locked
+Run Up=Complete, return engine controls to field elvation idle
 Parking Brake=Release
 --Normal Take-Off--
 Taxi Lights=Off
 Landing/Strobe Lights=On
-Cowl Flaps=Open
-Transponder=ALT
+Xponder=ALT
 Wing Flaps=Up to 1/3 Down
 Mixtures=Rich
-Power=Advance Right Throttle, confirm engine instruments live, then both Full Throttle & 2800RPM
+Engine Instruments=Live for both engines
+Power=Both Full Throttle & High RPM
 Elevator Control=Rotate @75-80MPH
 Brakes=Apply momentarily when airborne
-Landing Gear=Retract in climb out
+Landing Gear=Retract when clear 1000ft
 Climb Speed=110-120MPH
 Wing Flaps=Retract (if extended)
 --Gravel/Cinder Field Take-Off--
+Taxi Lights=Off
+Landing/Strobe Lights=On
+Xponder=ALT
 Wing Flaps=1/3 Down
-Cowl Flaps=Open
 Mixtures=Rich
-Power=Full Throttle & 2800RPM for rear-engine only
+Power=Full Throttle & 2800RPM rear-engine only
+Airspeed alive=Full Throttle & 2800RPM front-engine
 Elevator Control=Rotate @75-80MPH
-Power=Full Throttle & 2800RPM to front-engine
 Brakes=Apply momentarily when airborne
 Landing Gear & Wing Flaps=Retract in climb out
 Climb Speed=110-120MPH
 --Maximum Performance Take-Off--
+Taxi Lights=Off
+Landing/Strobe Lights=On
+Xponder=ALT
 Wing Flaps=1/3 Down
-Cowl Flaps=Open
 Brakes=Apply
 Mixtures=Rich
-Power=Advance Right Throttle, confirm engine instruments live, then both Full Throttle & 2800RPM
+Engine Instruments=Live for both engines
+Power=Both Full Throttle & High RPM
 Brakes=Release
 Elevator Control=Maintain slightly tail-low attitude
 Climb Speed=88MPH (with obstacles ahead)
@@ -104,31 +104,29 @@ Landing Gear & Wing Flaps=Retract (after obstacles are cleared)
 --Normal Climb--
 Airspeed=120-140MPH
 Power=24in & 2600RPM
-Mixtures=Lean to 78LBS/HR fuel flow
-Cowl Flaps=Open as req (monitor cylinder head temps)
 Strobe Lights=Off
+Mixtures=Lean to 78LBS/HR fuel flow
+Cowl Flaps=As req (monitor cylinder head temps)
 --Maximum Performance Climb--
 Airspeed=114MPH (sea level) to 108MPH (10,000ft)
+Strobe Lights=Off
 Power=Full throttle & 2800RPM
 Mixtures=Lean for altitude per fuel flow indicator placard
-Cowl Flaps=Open as req (monitor cylinder heat temp)
-Strobe Lights=Off
+Cowl Flaps=As req (monitor cylinder heat temp)
 --Cruising--
 Power=15-25in.MP & 2200-2600RPM
 Cowl Flaps=Closed
-Elevator/Rudder Trim=Adjust
 Mixtures=Lean for cruise fuel flow
-Landing Lights=Off
+Fuel Selectors=As req for fuel balance
+DG/HSI=Periodically confirm set to magnetic compass (level flight only)
 Descent & Approach briefing=Complete 5min prior to descent
---Descent (If in cold weather, observe engine temps and maintain adequate power)--
+--Descent (For cold weather, observe temps, keep adequate power)--
 Mixtures=Enrichen as req
 Power=As desired
-Cowl Flaps=Closed
+Instruments=Set for approach
 Wing Flaps=As desired (Up to 1/3 down below 160MPH)
-Landing Lights=On
 --Before Landing--
 Landing Gear=Down (below 160MPH)
-Instruments=Set
 Landing Gear Light=Green
 Landing Gear Handle=Check returned to neutral
 Strobe Lights=On
@@ -136,29 +134,23 @@ Mixtures=Rich
 Propellers=High RPM
 Wing Flaps=As desired (1/3 below 160MPH, 1/3 to FULL below 120MPH)
 Airspeed=90-100MPH (wing flaps extended)
-Elevator trim=Adjust as desired
 Cowl Flaps=Open
---Missed Approach/Go-Around--
-Power=Full Throttle & 2800RPM
-Wing Flaps=Retract to 1/3 down
-Trim=Adjust
-Wing Flaps=Retract to 0-degrees
 --Landing--
 Touchdown=Main wheels first
 Landing roll=Lower nose wheel gently
 Braking=Minimum required
---After Landing--
+--Taxi In--
 Wing Flaps=Retract
 Elevator/Rudder Trim=Reset to T/O position
-Transponder=STBY
+Xponder=On
 Landing/Strobe Lights=Off
 Taxi Lights=On
 --Securing aircraft--
-Parking brake=Set
 Taxi Lights=Off
+Parking brake=Set
 Radios & Electrical Equipment=Off
 Mixtures=Idle cut-off
 Fuel Selectors/Magnetos=Front/Rear Off
 Nav/Beacon Lights=Off
-Ignition/Starter Switches & Master Switch=Off
---Checklist by Lightdasher360, thanks to docs by Thranda for X-Plane and various pilots sharing exp & procs online!--
+Starter/Master/Alternator Switches=Off
+--Checklist by Lightdasher360, thanks to docs by Thranda for X-Plane, official Super SkyMaster Owner's Manual by Cessna, and various pilots sharing exp & procs online!--
