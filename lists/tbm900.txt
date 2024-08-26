@@ -2,29 +2,30 @@ TBM900
 --Cockpit Setup--
 Maintenance Log=Chkd
 Parking Brake=Set
-Weight & Balance=Complete
+Weight/Balance=Complete
 Chocks, Ties/Caps, Covers=Removed, fuel caps closed
 Fuel Supply=Selected
-Documents & Charts=Chkd
-All overhead switches=Down except ignition(on)
+Docs/Charts=Secured
+All overhead switches=Down except ignition
 Master Electrical Disconnect=Up
-Source=As req
+Power Source=As req
 Nav Light=On
 Warnings=Confirmed
+Annunciator & Landing Gear Lights=Tested
 Systems Self Tests=Complete
-Landing Gear Lights=Tested
 --Engine Start--
-ITT=Good (Motoring proc needed for ITT>155)
+ITT=OK (Motoring proc needed for ITT>155)
 Aux BP=On
 Prop Area=Clear
-Timer=Start
-Starter=Hold 2sec until self-catch, then release
+Timer & Starter=Begin & Hold 2sec until self-catch, release
+Oil Press=Rising
 Engine Parameters=Monitor, abort for high ITT
-Oil Pressure=Rising
 NG 13%=Power lever to low idle
 NG 30% Within 30Sec=Continue
 NG 52%=Power lever to flight idle
 NG 69%=Good engine start confirmed
+Source=Battery
+Inertial Seperator=On
 Generator=Main
 Aux BP=Auto
 Fuel Sel=Auto
@@ -32,22 +33,18 @@ AP/Trims=On
 Oxygen=As req
 ECS Bleed=Auto
 AC=As desired
-Inertial Seperator=On
-Source=Battery
 --After Start--
 Nav/Comm Radios=Set
 Altimeter=Set
 Flight Plan=Set
 Flight Director, Vspeed, Altitude=On and preset
-Heading Indicator=Set to RWY
+Heading Indicator=Set RWY
 Departure Briefing=Complete
 --Taxi--
 Area=Clear
 Exterior Lights=Taxi
 Xponder=On
-Brakes=Engaged
-Parking Brake=Off
-Brakes=Release pressure
+Brakes=Engaged, parking brake off, release press
 Throttle=Toward zero Thrust
 Emergency Procedure Briefing=Complete
 --Take-Off--
@@ -58,8 +55,8 @@ Exterior Lights=Landing & strobes on
 Power=Set (TRQ under 2250/ITT under 800)
 --After Take-Off--
 Yaw Damper=On
-Landing Gear=Up
-Flaps= Up
+Landing Gear/Flaps=Up
+Flaps=Up
 Strobes=Off
 Autopilot=As desired
 --Climb--
@@ -102,9 +99,9 @@ AC=Off
 ECS Bleed=Off/rst
 Power Lever=Low Idle
 Engine Instruments Stabilized Idle=power lever to cutoff
+Inertial Seperator=Off
 Aux BP=Off
 Generator=Off
-Inertial Seperator=Off
 Nav Lights=Off
 Source=Off
 Master Electrical Disconnect=Down
