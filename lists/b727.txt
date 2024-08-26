@@ -137,8 +137,8 @@ Galley Power=Off
 Air Cond=Off
 Start Press 20+ psi=Begin engn start
 --After Engine Start--
-APU=Close gen breakers, ess pwr each gen, gen 3, 1min timer APU shutoff
-Ext Pwr=Ess gen 3, close 1/2 breakers, ess gens 2/1, close 3, ess gen 3
+APU=Close gen breakers, ess pwr each gen, gen 3, 1min timer APU off
+Ext Pwr=Ess gen3, close 1/2 breakers, ess gens2/1, close 3, ess gen3
 AC Meters=Verify volt/freq normal each gen, gen 3
 Galley Power/Air Cond=As desired
 All Remaining Fuel Boost Pumps=On, all low press lhts exting
@@ -160,7 +160,7 @@ Other Hyd Sys B Pump=On, check norm press/quantities
 Elev Feel Diff Press/Rudder Load Limiter/No Equip Cool Lhts=Exting
 Engn 2/APU Bleed Air=Close
 Paks=On
-Flt/Grd=FLT (outflow vlv close, cbn rate move, diff press aprox +10psi)
+Flt/Grd=FLT (otflw vlv close, diff press aprox +10psi)
 Takeoff Briefing=Conduct
 --Cleared For Takeoff--
 Auto Pac Trip=Normal
