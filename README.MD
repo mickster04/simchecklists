@@ -25,7 +25,9 @@ If you're on a touchscreen (recommended) just touch the item to cross and move t
 - Beechcraft Baron 58 
 - Beechcraft Bonanza G36
 - British Aerospace (BAe) 146
-- Boeing 737-800x (Zibo)
+- Boeing 727
+- Boeing 737-800
+- Boeing 747-800
 - Cessna 152
 - Cessna 172 Skyhawk (G530 Version)
 - Cessna 337 Skymaster (Thranda/X-Plane)
@@ -33,6 +35,7 @@ If you're on a touchscreen (recommended) just touch the item to cross and move t
 - Cessna 750 (Citation X)
 - Piper Warrior 2 (JustFlight)
 - Robin DR400/100 Cadet
+- TBM900 (HotStart)
 - Sukhoi Su25-t Frogfoot
 - Sukhoi Su27 / Su33 Flanker
 
@@ -55,6 +58,14 @@ The code was written in PHP and Vanilla Javascript, you need to use at least PHP
 No need to build anything, it runs straight from the server.
 
 ### Version History: 
+Version 1.1.9 (2024/08/26)
+- Added: Secondary and Terciary cronometers.
+- Added: Boeing 747-800 checklist by tibonev.
+- Added: Boeing 727 checklist by Lightdasher360.
+- Added: TBM900 checklist by Lightdasher360.
+- Updated: C337 checklist by Lightdasher360.
+- Updated: Boeing 737-800 checklist by tibonev.
+
 Version 1.1.8 (2024/07/25)
 - Added: Chronometer functionality.
 - Added: Chronometer SVG icon.

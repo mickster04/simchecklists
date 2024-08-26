@@ -1,4 +1,4 @@
-Boeing 737-800 (Zibo)
+Boeing 737-800
 --Pre Start--
 Parking Brake=ON
 Dome Light=ON IF NEEDED
@@ -33,9 +33,10 @@ Gen 2=ON
 Gen 1=ON
 Apu=OFF
 Apu Bleed=OFF
---Taxi--
+--Before Taxi--
 Packs=ON
 Wing Lights=ON
+Taxi Lights=ON
 Set Cruise Altitude=ON
 Emergency Light Guard=ON
 Window Heat=ON
