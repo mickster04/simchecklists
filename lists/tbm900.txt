@@ -1,7 +1,7 @@
 DAHER-SOCATA TBM900 (Hot Start/XP11)
 --Cockpit Setup--
 Maint Log/Wght/Bal=Chkd
-Docs/Charts=Secured
+Docs/Charts/NOTAMS=Secured
 Chocks, Ties/Caps, Covers=Removed, fuel caps clsd
 Prkg Brk=Set
 Fuel=Select
@@ -10,7 +10,7 @@ Elec Discon=Up
 Source=As req
 Nav Lht=On
 Warns=Confirmed
-Annun & Gear Lhts=Tstd
+Annun & L/G Lhts=Tstd
 Sys Self Tsts=Complete
 --Engine Start--
 ITT=OK (Motoring proc for ITT>155)
