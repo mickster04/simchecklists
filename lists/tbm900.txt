@@ -1,110 +1,84 @@
-TBM900
+DAHER-SOCATA TBM900 (Hot Start/XP11)
 --Cockpit Setup--
-Maintenance Log=Chkd
-Parking Brake=Set
-Weight/Balance=Complete
-Chocks, Ties/Caps, Covers=Removed, fuel caps closed
-Fuel Supply=Selected
+Maint Log/Wght/Bal=Chkd
 Docs/Charts=Secured
-All overhead switches=Down except ignition
-Master Electrical Disconnect=Up
-Power Source=As req
-Nav Light=On
-Warnings=Confirmed
-Annunciator & Landing Gear Lights=Tested
-Systems Self Tests=Complete
+Chocks, Ties/Caps, Covers=Removed, fuel caps clsd
+Prkg Brk=Set
+Fuel=Select
+Ovrhd=All dwn except ignition
+Elec Discon=Up
+Source=As req
+Nav Lht=On
+Warns=Confirmed
+Annun & Gear Lhts=Tstd
+Sys Self Tsts=Complete
 --Engine Start--
-ITT=OK (Motoring proc needed for ITT>155)
+ITT=OK (Motoring proc for ITT>155)
 Aux BP=On
-Prop Area=Clear
-Timer & Starter=Begin & Hold 2sec until self-catch, release
-Oil Press=Rising
-Engine Parameters=Monitor, abort for high ITT
-NG 13%=Power lever to low idle
-NG 30% Within 30Sec=Continue
-NG 52%=Power lever to flight idle
-NG 69%=Good engine start confirmed
-Source=Battery
-Inertial Seperator=On
-Generator=Main
-Aux BP=Auto
-Fuel Sel=Auto
+Prop Area=Clr
+Starter=Start timer & hold 2sec until self-catch, release
+Oil Press=Rise
+NG 13%=Pwr low idle
+NG 30% Within 30Sec=Cont
+NG 52%=Pwr flt idle
+NG 69%=Egn start ok
+Gen=Main
+Aux BP/Fuel Sel=Auto
 AP/Trims=On
-Oxygen=As req
+Oxy=As req
 ECS Bleed=Auto
 AC=As desired
+Inert Sep=On
+Source=Batt
 --After Start--
-Nav/Comm Radios=Set
-Altimeter=Set
-Flight Plan=Set
-Flight Director, Vspeed, Altitude=On and preset
-Heading Indicator=Set RWY
-Departure Briefing=Complete
+Nav/Comm Radios, Altimeter, Flt Plan=Set
+Flt Direct, Vspd, Altitude=On & preset
+Hdg Indic=Set RWY
 --Taxi--
-Area=Clear
-Exterior Lights=Taxi
-Xponder=On
-Brakes=Engaged, parking brake off, release press
-Throttle=Toward zero Thrust
-Emergency Procedure Briefing=Complete
---Take-Off--
-Flaps=Set
-Trim=Set T/O
-Xponder=Alt
-Exterior Lights=Landing & strobes on
-Power=Set (TRQ under 2250/ITT under 800)
---After Take-Off--
-Yaw Damper=On
-Landing Gear/Flaps=Up
-Flaps=Up
+Ext Lhts=Taxi
+Xpndr=On
+Anti-Ice=As req
+Brks=Hold, prkg brk off, release
+Flaps/Trim/TOGA=T/O
+--TakeOff--
+Xpndr=Alt
+Ext Lhts=Lndg/Strobes on
+Pwr=TRQ under 2250/ITT under 800
+--After TakeOff--
+Yaw Damp=On
+Gear/Flaps=Up
 Strobes=Off
 Autopilot=As desired
 --Climb--
-Inertial Seperator=As req
-Pitot Heat=As req
-Engine Instruments=Monitor
-Above FL180=Altimeter set & landing lights off
---Cruise--
-Power=Set
-Engine Instruments=Monitor
-Descent & Approach Briefing=Complete 5min prior to descent
+Inert Sep/Anti-Ice=As req
+Egn Instr=Monitor, adjust pwr per climb
+18,000ft=Altimeter set, lndg lhts off
 --Descent--
-Power=As req
-Below FL180=Altimeter set & landing lights on
-Below 10,000ft=Inertial seperator on
+Power/Anti-Ice=As req
+18,000ft=Altimeter set, lndg lhts on
+10,000ft=Inert sep on
 --Approach--
-Landing Gear=Down
-Flaps=Down
+Gear/Flaps=Dwn
 Strobes=On
 Autopilot=Off
 TOGA=Set
 --After Landing--
-Power Lever=Beta
-Timer=Start (2min engine idle)
+Power=Beta (2min egn idle timer)
+Ext Lhts=Taxi on, strobes off
 Flaps=Up
-Trim=Set T/O
-Pitot Heat=Off
-Xponder=On
-Yaw Damper & Flight Director=Off
-Exterior Lights=Taxi on & strobes off
+Trim=T/O
+Xpndr=On
+Anti-Ice/Yaw Damp/Flt Direct=Off
 --Shutdown--
-Exterior Lights=Off
-Brakes=Applied
-Parking Brake=On
-Xponder=STBY
+Brks=Hold, prkg brk on, release
 AP/Trims=Off
 Fuel Sel=Man
-Oxygen=Off
-AC=Off
-ECS Bleed=Off/rst
-Power Lever=Low Idle
-Engine Instruments Stabilized Idle=power lever to cutoff
-Inertial Seperator=Off
-Aux BP=Off
-Generator=Off
-Nav Lights=Off
-Source=Off
-Master Electrical Disconnect=Down
+Oxy=Off
+AC/ECS Bleed=Off/Rst
+Pwr=Low Idle
+Egn Instr Stable Idle=pwr cutoff
+Aux BP/Gen/Inert Sep/Nav Lhts/Source=Off
+Elect Discon=Dwn
 --Securing Aircraft--
 Chocks, Ties/Caps, Covers=Set
---Checklist by Lightdasher360 using the Hot Start TBM900 for X-Plane 11, thanks to official Daher TBM videos and pilots sharing exp & procs online!--
+--Checklist by Lightdasher360, thanks to official Daher TBM videos and pilots sharing exp & procs online!--
