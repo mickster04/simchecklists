@@ -10,7 +10,7 @@ header("Permissions-Policy:screen-wake-lock=(self)");
 
 if(isset($_POST['theme'])) { $_SESSION['theme'] = substr($_POST['theme'],6); }
 $app_title = "SimChecklists";
-$app_version = "1.1.9";
+$app_version = "1.2";
 require_once('inc/_class.checklist.php');
 require_once('inc/_class.theme.php');
 $theme = new theme();

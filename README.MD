@@ -58,6 +58,15 @@ The code was written in PHP and Vanilla Javascript, you need to use at least PHP
 No need to build anything, it runs straight from the server.
 
 ### Version History: 
+Version 1.2 (2024/09/19)
+- Updated: Airbus A320neo (Simplefied) checklist by tibonev.
+- Updated: Boeing 727 checklist by Lightdasher360.
+- Updated: Cessna 337 Skymaster (Thranda/XP12) by Lightdasher360.
+- Updated: TBM900 checklist by Lightdasher360.
+- Updated: Piper Warrior 2 (JustFlight/XP11) by Lightdasher360.
+- Fixed PHP error causing build error. 
+- Added CI/CD support via Github Actions.
+
 Version 1.1.9 (2024/08/26)
 - Added: Secondary and Terciary cronometers.
 - Added: Boeing 747-800 checklist by tibonev.
