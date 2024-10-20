@@ -1,49 +1,56 @@
 DAHER-SOCATA TBM900 (Hot Start/XP11)
 --Cockpit Setup--
-Maint Log/Wght/Bal=Chkd
-Docs/Charts/NOTAMS=Secured
-Chocks, Ties/Caps, Covers=Removed, fuel caps clsd
+Wght & Bal, Docs/Charts=Secured
+Chocks, Ties/Caps=Removed/clsd
+GPU=As req
 Prkg Brk=Set
-Fuel=Select
-Ovrhd=All dwn except ignition
-Elec Discon=Up
-Source=As req
-Nav Lht=On
-Warns=Confirmed
-Annun & L/G Lhts=Tstd
-Sys Self Tsts=Complete
---Engine Start--
-ITT=OK (Motoring proc for ITT>155)
-Aux BP=On
-Prop Area=Clr
-Starter=Start timer & hold 2sec until self-catch, release
-Oil Press=Rise
-NG 13%=Pwr low idle
-NG 30% Within 30Sec=Cont
-NG 52%=Pwr flt idle
-NG 69%=Egn start ok
+Fuel=L/R
+Ovrhd=All dwn
+Elec=Discon up, source as req, nav lhts on
+Warns=Confirm
+Annun & Gear Lhts=Test
+Sys Self Tests=Complete
+--Starting Engine--
+Man Ovrd Cntrl=Backward
+Throttle=Cutoff
+Pulse Lhts, Aux BP=On
+Prop Area Clear=Timer start, hold starter til self-catch
+Oil Press=Rising
+NG 13%=Power low idle
+NG 30% Within 30Sec=Continue
+NG 52%=Power flt idle, starter off
+NG 69%=Inert sep on
+GPU Start=Source batt, elec network chkd
+Egn Params Chkd=Aux bp set auto, fuel sel as req
+--After Starting Engine--
 Gen=Main
-Aux BP/Fuel Sel=Auto
 AP/Trims=On
-Oxy=As req
-ECS Bleed=Auto
-AC=As desired
-Inert Sep=On
-Source=Batt
---After Start--
-Nav/Comm Radios, Altimeter, Flt Plan=Set
-Flt Direct, Vspd, Altitude=On & preset
+Oxy=Chkd
+Display Backup=Check, return
+AC/Bleed/Press=As req/Auto
+Stby Instr=Chkd
+Flt Plan, Nav/Comm Radios, Altimeter=Set
+LFE Sel=Done
+Xpndr/Flt Dir, Vspd, Altitude=On & preset
 Hdg Indic=Set RWY
+Trims=Set
+De-Ice Panel=As req
 --Taxi--
 Ext Lhts=Taxi
-Xpndr=On
-Anti-Ice=As req
-Brks=Hold, prkg brk off, release
-Flaps/Trim/TOGA=T/O
+Flt Instr/CAS/LFE=Chkd
+--Before Takeoff--
+Prkg Brk=On
+Throttle=Flt idle, feather twice
+Flaps/Trims/TOGA=TO
+De-Ice=As req
+Flt Cntrls=Chkd
+Pax Table=Stowed
+CAS, Fuel, Instr, LFE, TO Data=Chkd
+Batt Charge=<50amps
 --TakeOff--
 Xpndr=Alt
 Ext Lhts=Lndg/Strobes on
-Pwr=TRQ under 2250/ITT under 800
+Pwr=TRQ<100, Prop<2250, ITT<800
 --After TakeOff--
 Yaw Damp=On
 Gear/Flaps=Up
@@ -51,34 +58,44 @@ Strobes=Off
 Autopilot=As desired
 --Climb--
 Inert Sep/Anti-Ice=As req
-Egn Instr=Monitor, adjust pwr per climb
+Fuel=Chkd
+Instr=Monitor
 18,000ft=Altimeter set, lndg lhts off
+--Cruise--
+Fuel=Chkd
+Egn Instr=Monitor
 --Descent--
-Power/Anti-Ice=As req
+Pwr/Anti-Ice=As req
+W/S Misting Prot Sys=As req
 18,000ft=Altimeter set, lndg lhts on
-10,000ft=Inert sep on
 --Approach--
+Pax Table=Stowed
+Inert Sep=On
+Fuel=Fullest tank
 Gear/Flaps=Dwn
 Strobes=On
-Autopilot=Off
+Yaw Damp/Autopilot=Off
 TOGA=Set
 --After Landing--
-Power=Beta (2min egn idle timer)
+Pwr=Beta (2min egn idle timer)
+Radar=Stby
 Ext Lhts=Taxi on, strobes off
 Flaps=Up
 Trim=T/O
+Anti-Ice=Off
 Xpndr=On
-Anti-Ice/Yaw Damp/Flt Direct=Off
+Flt Dir=Off
 --Shutdown--
-Brks=Hold, prkg brk on, release
-AP/Trims=Off
+Prk Brk=On
+Ext Lhts/AP/Trims=Off
 Fuel Sel=Man
-Oxy=Off
-AC/ECS Bleed=Off/Rst
-Pwr=Low Idle
-Egn Instr Stable Idle=pwr cutoff
-Aux BP/Gen/Inert Sep/Nav Lhts/Source=Off
+AC/Bleed=Off/Rst
+Pwr Lever=Low Idle
+Egn Instr Stable Idle=Pwr cutoff
+Inert Sep=Off
+Ext Lhts/Gen/Aux BP/Oxy=Off
+Inert Sep Clsd=Source off
 Elect Discon=Dwn
 --Securing Aircraft--
 Chocks, Ties/Caps, Covers=Set
---Checklist by Lightdasher360, thanks to official Daher TBM videos and pilots sharing exp & procs online!--
+--Checklist by Lightdasher360 using the Hot Start TBM900 addon and docs for X-Plane 11, thanks to official Daher TBM videos and pilots sharing exp & procs online!--
