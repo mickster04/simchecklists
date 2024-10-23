@@ -36,6 +36,7 @@ Prop=Cycle twice
 Mags=Check, max 150 drop & 50 diff
 Pwr=Throttle idle, mix lean
 --Before Takeoff--
+Hdg=Set initial
 Instr=Chkd/Green
 AP/FD=Off/As desired
 Controls=Free
