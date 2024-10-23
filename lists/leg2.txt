@@ -76,14 +76,15 @@ Airspeed=95kts, establish clb
 Flaps=Retract 20deg
 L/G=Retract
 --Taxi In--
+Pwr=Throttle idle, Mix lean
 Time In=Note
 Flaps=Up
+Trim=Set t/o
 Door Seal, Elec Trim, Lndg/Strobes=Off
 Xpdr=On
-Trim=Set t/o
 --Shutdown--
 Radios/Xpdr/Avionics=Off
 Pwr=Throttle/Mix idle
-Fuel/Lhts/Alt/Mags/Batt=Off
+Fuel/Mags/Lhts/Alt/Batt=Off
 Covers/Chocks=Secure
 --Checklist by Lightdasher360, thanks to Aerobask and Lancair docs--
