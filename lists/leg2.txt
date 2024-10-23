@@ -40,6 +40,7 @@ Instr=Chkd/Green
 AP/FD=Off/As desired
 Controls=Free
 --Takeoff--
+Pwr=Mix rich, prop full
 Lndg/Strobes=On
 Xpdr=Alt
 Time Off=Note
@@ -83,6 +84,6 @@ Trim=Set t/o
 --Shutdown--
 Radios/Xpdr/Avionics=Off
 Pwr=Throttle/Mix idle
-Fuel/Lhts/Alt/Batt/Mags=Off
+Fuel/Lhts/Alt/Mags/Batt=Off
 Covers/Chocks=Secure
 --Checklist by Lightdasher360, thanks to Aerobask and Lancair docs--
