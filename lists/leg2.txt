@@ -9,24 +9,24 @@ Batt/Alt/Avionics=Off
 L/G=Dwn
 GPU=As req
 --Starting--
-Batt=On
-Fuel=Check
+Batt/Nav Lht=On
+Fuel=Check, L/R
 Alt Air=Off
 Pwr=Mix rich, prop full, throttle 1/4"
 Pump=Check, prime as req
 Prop clear=Set mags, start
-Throttle=RPM as req, 1200 cold/1000 warmup/800 warm
+Throttle=RPM as req, 1200 cold/1000 warmup/850 warm
 Mix=Lean
-Oil Press Green=Alt/Nav Lht/Avionics/Radios on
+Oil Press Green=Alt/Elec Trim/Avionics/Radios on
 GPU=Off
 --Pre-Taxi--
 Flt Plan/Altimeters/Radios=Set
 Xpdr=Sby, set squawk
 --Taxi--
-Canopy=Latched
+Canopy=Latched, door seal on
 Hdg=Rwy
 Xpdr, Taxi Lht=On
-Instruments=Verify
+Instr=Verify
 Flaps/Trim=Set
 --Run Up--
 Brks=Set
@@ -34,18 +34,13 @@ CHT/Oil Temp=Green
 Pwr=Mix rich, throttle 1800rpm
 Prop=Cycle twice
 Mags=Check, max 150 drop & 50 diff
-Throttle=Idle, then 800rpm
+Pwr=Throttle idle, mix lean
 --Before Takeoff--
-Canopy=Locked
 Instr=Chkd/Green
-Brkrs=In
-Batt/Alt/Avionics/Radios=On/Set
-Autopilot=Off
-Flaps/Trim=Chkd
+AP/FD=Off/As desired
 Controls=Free
-Door Seal=On
 --Takeoff--
-Lndg & Strobe Lhts=On
+Lndg/Strobes=On
 Xpdr=Alt
 Time Off=Note
 Pump=As req
@@ -53,8 +48,8 @@ Oil Temp & CHT=100f/38c & 150f/65c min
 65-75kts=Rotate
 Positive Rate=L/G up
 --Climb--
-Abv 800'=Flaps up, taxi/strobes & pump off
-Pwr=2500rpm, mix lean
+Abv 800'=Flaps up, taxi/strobes/pump off
+Pwr=2500rpm, mix lean thru clb
 Oil Temp & CHT=240f/116c & 500f/260c max
 Fuel=Balanced
 Oxy=As req
@@ -66,7 +61,6 @@ Instr & Nav=Monitor
 Fuel=Balanced
 Altimeters=Set
 Mix=Enrichen thru descent
-Throttle=As req (avoid rapid cooling)
 CHT=Maintain abv 180f/82c
 Oxy=Off
 --Pre Landing--
@@ -74,24 +68,21 @@ Fuel=Fullest tank
 Pwr=Mix rich, prop high
 L/G=Dwn (140kts max), 3 green
 Flaps=Full (120kts max)
-Brks=Check & pump
-Taxi & Strobes=On
+Taxi/Strobes=On
 --Balked Landing--
 Throttle=Full
 Airspeed=95kts, establish clb
 Flaps=Retract 20deg
 L/G=Retract
---After Landing--
+--Taxi In--
+Time In=Note
 Flaps=Up
-Lndg/Strobes=Off
+Door Seal, Elec Trim, Lndg/Strobes=Off
 Xpdr=On
 Trim=Set t/o
-Canopy Seal=Off
-Time In=Note
 --Shutdown--
 Radios/Xpdr/Avionics=Off
-Throttle=Idle
-Mix=Idle cutoff
-Lhts/Alt/Batt/Mags=Off
+Pwr=Throttle/Mix idle
+Fuel/Lhts/Alt/Batt/Mags=Off
 Covers/Chocks=Secure
 --Checklist by Lightdasher360, thanks to Aerobask and Lancair docs--
