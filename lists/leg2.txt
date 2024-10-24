@@ -7,7 +7,7 @@ Brks=Check & hold
 Brkrs=In
 Batt/Alt/Avionics=Off
 L/G=Dwn
-GPU=As req
+Oxy/GPU=Check, as req
 --Starting--
 Batt/Nav Lht=On
 Fuel=Check, L/R
