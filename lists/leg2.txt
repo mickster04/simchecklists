@@ -1,8 +1,8 @@
 Lancair Legacy (Aerobask/X-Plane)
 --Before Start--
-Wght/Bal=Complete
-Covers/Chocks=Removed
+Wght & Bal, Maint=Complete
 Docs/Charts/NOTAMS=Secured
+Covers/Chocks=Removed
 Brks=Check & hold
 Brkrs=In
 Batt/Alt/Avionics=Off
@@ -15,8 +15,8 @@ Alt Air=Off
 Pwr=Mix rich, prop full, throttle 1/4"
 Pump=Check, prime as req
 Prop clear=Set mags, start
-Throttle=RPM as req, 1200 cold/1000 warmup/850 warm
 Mix=Lean
+Throttle=RPM as req, 1200 cold/1000 warmup/800 warm
 Oil Press Green=Alt/Elec Trim/Avionics/Radios on
 GPU=Off
 --Pre-Taxi--
@@ -39,7 +39,7 @@ Pwr=Throttle idle, mix lean
 Hdg=Set initial
 Instr=Chkd/Green
 AP/FD=Off/As desired
-Controls=Free
+Controls=Free & correct
 --Takeoff--
 Pwr=Mix rich, prop full
 Lndg/Strobes=On
@@ -57,8 +57,7 @@ Fuel=Balanced
 Oxy=As req
 --Cruise--
 Pwr=Throttle as desired, prop 2400rpm, mix lean
-Fuel=Balanced
-Instr & Nav=Monitor
+Fuel/Instr/Nav=Monitor
 --Descent--
 Fuel=Balanced
 Altimeters=Set
@@ -84,7 +83,7 @@ Trim=Set t/o
 Door Seal, Elec Trim, Lndg/Strobes=Off
 Xpdr=On
 --Shutdown--
-Radios/Xpdr/Avionics=Off
+Xpdr/Radios/Avionics=Off
 Pwr=Throttle/Mix idle
 Fuel/Mags/Lhts/Alt/Batt=Off
 Covers/Chocks=Secure
