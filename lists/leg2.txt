@@ -9,13 +9,12 @@ Batt/Alt/Avionics=Off
 L/G=Dwn
 Nav Lht, GPU=On, as req
 --Starting--
-Batt charged=Batt on, GPU off
+Batt charged=Batt on, GPU/Alt Air off
 Fuel=Check, L/R
-Alt Air=Off
 Pwr=Mix rich, prop full, throttle 1/4"
 Pump=Check, prime as req
 Prop Clear=Set mags, start
-Pwr=RPM as req (1000 cold/800 warm), mix lean
+Pwr=RPM as req (1000 cold/800 warm), lean mix
 Oil Press Green=Alt/Elec Trim/Avionics/Radios on
 --Pre-Taxi--
 Flt Plan/Altimeters/Radios=Set
@@ -24,36 +23,36 @@ Xpdr=Sby, set squawk
 Canopy=Latched, door seal on
 Hdg=Rwy
 Xpdr, Taxi Lht=On
-Instr=Verify
+Instr=Check
 Flaps/Trim=Set
 --Run Up--
-Brks=Set
+Prkg Brk=Set
 CHT/Oil Temp=Green
 Pwr=Mix rich, throttle 1800rpm
 Prop=Cycle twice
 Mags=Check, max 150 drop & 50 diff
-Pwr=Throttle idle, mix lean
+Pwr=Throttle check full dwn then idle, lean mix
 --Before Takeoff--
 Hdg=Set initial
-Instr=Chkd/Green
+Instr=Chkd
 Oil Temp & CHT=100f/38c & 150f/65c min
 AP/FD=Off/As desired
-Controls=Free & correct
+Cntrls=Free/Correct
 --Takeoff--
-Pwr=Mix rich, prop full
 Lndg/Strobes=On
 Xpdr=Alt
 Time Off=Note
+Pwr=Mix rich, prop full
 Pump=As req
-Positive Rate=L/G up
 --Climb--
-Abv 800'=Flaps up, taxi/strobes/pump off
+Clear Rwy=L/G up, strobes off
+Abv 800'=Flaps up, taxi lht & pump off
 Pwr=2500rpm, lean mix thru clb
 Oil Temp & CHT=240f/116c & 500f/260c max
 Fuel=Balanced
 Oxy=As req
 --Cruise--
-Pwr=Throttle as desired, prop 2400rpm, mix lean
+Pwr=Prop 2400rpm, lean mix
 Fuel/Instr/Nav=Monitor
 CHT=Blw 435f/224c max cruise, 400f/205c econ cruise
 --Descent--
@@ -74,7 +73,7 @@ Airspeed=95kts, establish clb
 Flaps=Retract 20deg
 Positive Rate=L/G up
 --Taxi In--
-Pwr=Throttle idle, Mix lean
+Pwr=Throttle idle, lean mix
 Time In=Note
 Flaps=Up
 Trim=Set t/o
