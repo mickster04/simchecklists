@@ -41,7 +41,6 @@ Cntrls=Free/Correct
 --Takeoff--
 Lndg/Strobes=On
 Xpdr=Alt
-Time Off=Note
 Pwr=Mix rich, prop full
 Pump=As req
 --Climb--
@@ -74,7 +73,6 @@ Flaps=Retract 20deg
 Positive Rate=L/G up
 --Taxi In--
 Pwr=Throttle idle, lean mix
-Time In=Note
 Flaps=Up
 Trim=Set t/o
 Door Seal, Elec Trim, Lndg/Strobes=Off
