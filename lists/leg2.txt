@@ -1,10 +1,9 @@
-Lancair Legacy (Aerobask/XP)
+Lancair Legacy (Aerobask/X-Plane)
 --Before Start--
 Wght & Bal, Oxy, Maint=Chkd
-Docs/Charts/NOTAMS=Secured
-Covers/Chocks=Removed
-Brkrs=In
-Brks=Check & hold
+Docs/Charts/NOTAMS=Reviewed
+Covers/Chocks & Walkaround=Removed & complete
+Brks=Check, set prkg
 Batt/Alt/Avionics=Off
 L/G=Dwn
 Nav Lht, GPU=On, as req
@@ -13,8 +12,8 @@ Batt charged=Batt on, GPU/Alt Air off
 Fuel=Check, L/R
 Pwr=Mix rich, prop full, throttle 1/4"
 Pump=Check, prime as req
-Prop Clear=Set mags, start
-Pwr=RPM as req (1000 cold/800 warm), lean mix
+Prop Clear=Mags on, start egn
+Pwr=Idle throttle (800rpm), lean mix
 Oil Press Green=Alt/Elec Trim/Avionics/Radios on
 --Pre-Taxi--
 Flt Plan/Altimeters/Radios=Set
@@ -27,39 +26,38 @@ Instr=Check
 Flaps/Trim=Set
 --Run Up--
 Prkg Brk=Set
-CHT/Oil Temp=Green
+Oil Temp & CHT=100f/38c & 150f/65c min
 Pwr=Mix rich, throttle 1800rpm
 Prop=Cycle twice
 Mags=Check, max 150 drop & 50 diff
-Pwr=Throttle check full dwn then idle, lean mix
+Pwr=Throttle check full out then idle, lean mix
 --Before Takeoff--
 Hdg=Set initial
 Instr=Chkd
-Oil Temp & CHT=100f/38c & 150f/65c min
 AP/FD=Off/As desired
 Cntrls=Free/Correct
 --Takeoff--
-Lndg/Strobes=On
+Strobes/Lndg=On
 Xpdr=Alt
 Pwr=Mix rich, prop full
 Pump=As req
 --Climb--
 Clear Rwy=L/G up, strobes off
 Abv 800'=Flaps up, taxi lht & pump off
-Pwr=2500rpm, lean mix thru clb
+Pwr=2500rpm, lean mix/set altimeters thru clb
 Oil Temp & CHT=240f/116c & 500f/260c max
 Fuel=Balanced
-Oxy=As req
+Abv 10,000ft day/5,000ft night=Oxy on
 --Cruise--
 Pwr=Prop 2400rpm, lean mix
-Fuel/Instr/Nav=Monitor
+Instr/Nav/Fuel/Altimeters=Monitor & set as req
 CHT=Blw 435f/224c max cruise, 400f/205c econ cruise
 --Descent--
 Fuel=Balanced
 Altimeters=Set
 Mix=Enrichen thru descent
 CHT=Maintain abv 180f/82c
-Oxy=Off
+Blw 10,000ft day/5,000ft night=Oxy off
 --Pre Landing--
 Fuel=Fullest tank
 Pwr=Mix rich, prop high
@@ -74,12 +72,12 @@ Positive Rate=L/G up
 --Taxi In--
 Pwr=Throttle idle, lean mix
 Flaps=Up
-Trim=Set t/o
-Door Seal, Elec Trim, Lndg/Strobes=Off
+Trims=Set neutral
+Strobes/Lndg, Elec Trim, Door Seal=Off
 Xpdr=On
 --Shutdown--
 Xpdr/Radios/Avionics=Off
-Pwr=Throttle/Mix idle
+Pwr=Throttle/Mix cutoff
 Fuel/Mags/Lhts/Alt/Batt=Off
-Covers/Chocks=Secure
+Covers/Chocks/Canopy Latch=Secure
 --Checklist by Lightdasher360, thanks to Aerobask and Lancair docs--
