@@ -1,9 +1,9 @@
 Lancair Legacy (Aerobask/X-Plane)
 --Before Start--
 Wght & Bal, Oxy, Maint=Chkd
-Docs/Charts/NOTAMS=Reviewed
-Covers/Chocks & Walkaround=Removed & complete
-Brks=Check, set prkg
+Docs/Charts/NOTAMS=Onboard
+Prkg Brk=Set
+Walkaround=Complete
 Batt/Alt/Avionics=Off
 L/G=Dwn
 Nav Lht, GPU=On, as req
@@ -13,17 +13,18 @@ Fuel=Check, L/R
 Pwr=Mix rich, prop full, throttle 1/4"
 Pump=Check, prime as req
 Prop Clear=Mags on, start egn
-Pwr=Idle throttle (800rpm), lean mix
-Oil Press Green=Alt/Elec Trim/Avionics/Radios on
+Alt/Elec Trim/Avionics/Radios=On
+Pwr=Idle throttle (>800rpm), lean mix
 --Pre-Taxi--
-Flt Plan/Altimeters/Radios=Set
-Xpdr=Sby, set squawk
---Taxi--
+Flt Plan/Altimeters/Radios/Xpdr=Set
 Canopy=Latched, door seal on
 Hdg=Rwy
-Xpdr, Taxi Lht=On
-Instr=Check
 Flaps/Trim=Set
+Instr=Check
+Cntrls=Free/Correct
+--Taxi--
+Xpdr, Taxi Lht=On
+Brks=Chkd
 --Run Up--
 Prkg Brk=Set
 Oil Temp & CHT=100f/38c & 150f/65c min
@@ -35,7 +36,6 @@ Pwr=Throttle check full out then idle, lean mix
 Hdg=Set initial
 Instr=Chkd
 AP/FD=Off/As desired
-Cntrls=Free/Correct
 --Takeoff--
 Strobes/Lndg=On
 Xpdr=Alt
@@ -49,7 +49,7 @@ Oil Temp & CHT=240f/116c & 500f/260c max
 Fuel=Balanced
 Abv 10,000ft day/5,000ft night=Oxy on
 --Cruise--
-Pwr=Prop 2400rpm, lean mix
+Pwr=As desired
 Instr/Nav/Fuel/Altimeters=Monitor & set as req
 CHT=Blw 435f/224c max cruise, 400f/205c econ cruise
 --Descent--
@@ -62,7 +62,7 @@ Blw 10,000ft day/5,000ft night=Oxy off
 Fuel=Fullest tank
 Pwr=Mix rich, prop high
 L/G=Dwn (140kts max), 3 green
-Flaps=Full (120kts max)
+Flaps=Set
 Taxi/Strobes=On
 --Balked Landing--
 Throttle=Full
@@ -72,12 +72,13 @@ Positive Rate=L/G up
 --Taxi In--
 Pwr=Throttle idle, lean mix
 Flaps=Up
-Trims=Set neutral
+Trims=Neutral
 Strobes/Lndg, Elec Trim, Door Seal=Off
 Xpdr=On
 --Shutdown--
 Xpdr/Radios/Avionics=Off
+Mags=Check, max 150 drop & 50 diff
 Pwr=Throttle/Mix cutoff
 Fuel/Mags/Lhts/Alt/Batt=Off
 Covers/Chocks/Canopy Latch=Secure
---Checklist by Lightdasher360, thanks to Aerobask and Lancair docs--
+--Checklist by Lightdasher360, thanks to Aerobask/Lancair/Continental docs & GA pilot insight--
