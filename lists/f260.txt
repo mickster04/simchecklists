@@ -4,10 +4,10 @@ Wht/Bal=Complete
 Maint/Preflt-Walk=No issues
 Batt/Ign/Avionics/Ext Lhts=Off
 Pwr=Mix cutoff, prop feather, thrtl clsd
+--Engine Start--
 Batt/Nav Lhts=On
 L/G=Dwn, 3 grn
-Fuel=Chkd
---Engine Start--
+Fuel=Chkd, cutoff switch on
 Prkg Brk=On
 Pwr=Prop high rpm, mix lean
 Beacon=On
@@ -65,7 +65,7 @@ Xpdr=On
 Prkg Brk=On
 Avionics/Xpdr=Off/Stby
 Mags=Chkd
-Mix=Idle cut off
+Fuel=Mix and fuel cut off
 Mags/Lhts/Altr/Batt=Off
 Postflt-Walk=Complt
 --Checklist by Lightdasher360, thanks to JRollon/Simcoders docs--
