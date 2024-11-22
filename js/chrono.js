@@ -1,17 +1,45 @@
-chrono_open_buttons = document.querySelectorAll('.chrono_open');
-chrono_open_buttons.forEach(function(btn) { btn.addEventListener('click', chrono_open, false); });
-document.getElementById('chrono_close').addEventListener('click', chrono_close, false);
-
-
-// Chronometer 1 //
-document.getElementById('chrono_start').addEventListener('click', chrono_start, false);
-document.getElementById('chrono_stop').addEventListener('click', chrono_stop, false);
-document.getElementById('chrono_reset').addEventListener('click', chrono_reset, false);
-chrono_display = document.getElementById('chrono_display');
 let timer;
 var chrono_min = 0;
 var chrono_seg = 0;
 var chrono_run = 0;
+
+let timer2;
+var chrono_min2 = 0;
+var chrono_seg2 = 0;
+var chrono_run2 = 0;
+
+let timer3;
+var chrono_min3 = 0;
+var chrono_seg3 = 0;
+var chrono_run3 = 0;
+
+function chrono_load() {
+	chrono_open_buttons = document.querySelectorAll('.chrono_open');
+	chrono_open_buttons.forEach(function(btn) { btn.addEventListener('click', chrono_open, false); });
+	document.getElementById('chrono_close').addEventListener('click', chrono_close, false);
+
+	// Chronometer 1 //
+	document.getElementById('chrono_start').addEventListener('click', chrono_start, false);
+	document.getElementById('chrono_stop').addEventListener('click', chrono_stop, false);
+	document.getElementById('chrono_reset').addEventListener('click', chrono_reset, false);
+	chrono_display = document.getElementById('chrono_display');
+	
+
+	// Chronometer 2 //
+	document.getElementById('chrono_start2').addEventListener('click', chrono_start2, false);
+	document.getElementById('chrono_stop2').addEventListener('click', chrono_stop2, false);
+	document.getElementById('chrono_reset2').addEventListener('click', chrono_reset2, false);
+	chrono_display2 = document.getElementById('chrono_display2');
+	
+
+	// Chronometer 3 //
+	document.getElementById('chrono_start3').addEventListener('click', chrono_start3, false);
+	document.getElementById('chrono_stop3').addEventListener('click', chrono_stop3, false);
+	document.getElementById('chrono_reset3').addEventListener('click', chrono_reset3, false);
+	chrono_display3 = document.getElementById('chrono_display3');
+	
+
+}
 
 function chrono_open() { 
 	document.getElementsByClassName("chrono_window")[0].classList.add("is-visible");
@@ -65,15 +93,6 @@ function chrono_update_display() {
 
 
 // Chronometer 2 //
-document.getElementById('chrono_start2').addEventListener('click', chrono_start2, false);
-document.getElementById('chrono_stop2').addEventListener('click', chrono_stop2, false);
-document.getElementById('chrono_reset2').addEventListener('click', chrono_reset2, false);
-chrono_display2 = document.getElementById('chrono_display2');
-let timer2;
-var chrono_min2 = 0;
-var chrono_seg2 = 0;
-var chrono_run2 = 0;
-
 function chrono_start2() { 
 	if(chrono_run2 == 0) { 
 		timer2 = window.setInterval(function(){
@@ -114,15 +133,6 @@ function chrono_update_display2() {
 }
 
 // Chronometer 3 //
-document.getElementById('chrono_start3').addEventListener('click', chrono_start3, false);
-document.getElementById('chrono_stop3').addEventListener('click', chrono_stop3, false);
-document.getElementById('chrono_reset3').addEventListener('click', chrono_reset3, false);
-chrono_display3 = document.getElementById('chrono_display3');
-let timer3;
-var chrono_min3 = 0;
-var chrono_seg3 = 0;
-var chrono_run3 = 0;
-
 function chrono_start3() { 
 	if(chrono_run3 == 0) { 
 		timer3 = window.setInterval(function(){

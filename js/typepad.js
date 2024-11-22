@@ -1,8 +1,10 @@
-writer_open_buttons = document.querySelectorAll('.writer_open');
-writer_open_buttons.forEach(function(btn) { btn.addEventListener('click', writer_open, false); });
-document.getElementById('writer_close').addEventListener('click', writer_close, false);
-document.getElementById('writer_clean').addEventListener('click', writer_clean);
-typepad = document.getElementById('writer_pad');
+function writer_load() {
+	writer_open_buttons = document.querySelectorAll('.writer_open');
+	writer_open_buttons.forEach(function(btn) { btn.addEventListener('click', writer_open, false); });
+	document.getElementById('writer_close').addEventListener('click', writer_close, false);
+	document.getElementById('writer_clean').addEventListener('click', writer_clean);
+	typepad = document.getElementById('writer_pad');
+}
 
 function writer_clean() { typepad.value = ""; }
 

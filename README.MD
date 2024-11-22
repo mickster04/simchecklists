@@ -17,11 +17,11 @@ Check the live version of this app @ [checklist.classicgames.com.br](http://chec
 None of the information or checklists in this application should be used for real-world flying. All the information here is for simulation purposes only!
 
 ## Usage
-Select or upload the desired checklist, click on a item to automatically cross it, mark as done and highlight the next item. 
+Select the desired checklist, click on a item to automatically cross it, mark as done and highlight the next item. 
 If you're on a touchscreen (recommended) just touch the item to cross and move to the next.
 
 ## Currently supported Aircraft 
-- Airbus A320neo 
+- Airbus A32x Family (A320neo, A321neo, A319 and A318)
 - Beechcraft Baron 58 
 - Beechcraft Bonanza G36
 - British Aerospace (BAe) 146
@@ -33,9 +33,11 @@ If you're on a touchscreen (recommended) just touch the item to cross and move t
 - Cessna 337 Skymaster (Thranda/X-Plane)
 - Cessna CJ4 (Citation)
 - Cessna 750 (Citation X)
+- Lancair Legagy (Aerobask/X-Plane)
 - Piper Warrior 2 (JustFlight)
 - Robin DR400/100 Cadet
 - TBM900 (HotStart)
+- SIAI-Marchetti SF-260D (Jrollon/X-Plane)
 - Sukhoi Su25-t Frogfoot
 - Sukhoi Su27 / Su33 Flanker
 
@@ -44,27 +46,51 @@ Checklist files are simple .txt files, the format is also very simple, basically
 - the very first line of the file is the main title (aka aircraft name)
 - each new sublist (Pre-Flight, Before Takeoff, Taxi, etc) is named between double dashes (ie. --Before Flight--) also on its own line.
 - each item use the format descriptive=state (ie. Parking Brake=ON). 
+- to add additional information or comment to a item, add a line right below it starting with double asterisk ``` ** ```
 - If you want to credit the checklist, just use --Credits-- on the very last line of the checklist file.
-If you upload your file through the interface please keep in mind the app is checking both the file extention (for .txt) and the MIME type (for plain/text), otherwise it will refuse your file.
 
-### Theme Files 
-You can choose from one of the available themes in the select box. 
-To install a new theme, upload a .thm file to /assets/.
-The format is very simple: one item per line, in the "property=value" format. 
-All themes have both a dark and light version, inside the same file.
+### Checklist Masterfile 
+Due to the requirements of the offline version, a masterlist, called masterlist.json must be updated each time a new list is added, the format follows:
+```{
+    "file": "a320neo.txt",
+    "name": "Airbus A320neo"
+},```
+Pretty much self-explanatory, but the file property is the name of the file inside /lists and the name is the display name for the list on the first screen of the app.
 
 ### Requirements
-The code was written in PHP and Vanilla Javascript, you need to use at least PHP7 and a browser with support for ECMAS2019.
-No need to build anything, it runs straight from the server.
+The code is written in Vanilla Javascript, you need to use a browser with support for ECMAScript 2019.
+No need to build anything, it runs straight from the webserver.
 
 ### Version History: 
+
+Version 2.0 (2024/11/22)
+- Converted from PHP to pure VanillaJS, this is done in preparation for the native versions of the app to be able to run offline, since embedding a local PHP server would be an overkill, so the app will entirely locally in the native versions, without the need for the device to be connected to the internet, and this still allows me to use the same codebase for all the versions, but it will require re-compiling for each plataform on the release of an update to anything (code or lists);
+- Added masterlist.json to concentrate information about the checklists.
+- Created a script masterlist_gen.py to autogenerate the masterlist from the files in the /lists folder, requires python.
+- Added support for a general config file, in the form of config.json, inside the inc folder.
+- Removed option to select different themes (for now, at least).
+- Removed option to upload your own list (for now, at least).
+- Re-written the core code (old _class.checklist.php) in VanillaJS (checklist.js);
+- Re-written the icon load functions in VanillaJS.
+- Free native Android version release package - still in Alpha, no support for this version yet.
+- Added support for comments in items. Comments aren't clickable, and to add them, just add a line starting with double asterisk in the checklist. - According to Issue #31.
+- Updated TBM900 checklist by Lightdasher360.
+- Added Lancair Legacy checklist by Lightdasher360.
+- Added SIAI-Marchetti SF-260D (Jrollon/X-Plane) checklist by Lightdasher360.
+- Added Airbus A310 (iniBuilds) checklist by tibonev.
+- Renamed Airbus A320neo (Simplefied) checklist to Airbus A32x Family (Simplified) (checklist by tibonev.)
+- Solved bug with "--" still showing in titles in some lists.
+- Created a python script to update the masterlist.json file, simply run masterlist_gen.py in the lists directory and it will overwrite and output the masterlist.json file as required.
+- Removed build e test buttons from footer, as they require user to be online.
+- Added tibonev logo by ChrisBunny (used with permission).
+
 Version 1.2 (2024/09/19)
 - Updated: Airbus A320neo (Simplefied) checklist by tibonev.
 - Updated: Boeing 727 checklist by Lightdasher360.
 - Updated: Cessna 337 Skymaster (Thranda/XP12) by Lightdasher360.
 - Updated: TBM900 checklist by Lightdasher360.
 - Updated: Piper Warrior 2 (JustFlight/XP11) by Lightdasher360.
-- Fixed PHP error causing build error. 
+- Fixed PHP error causing build error.
 - Added CI/CD support via Github Actions.
 
 Version 1.1.9 (2024/08/26)

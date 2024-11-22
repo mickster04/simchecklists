@@ -1,18 +1,20 @@
-canvas = document.getElementById('canvas');
-ctx = canvas.getContext('2d');
-coord = { x: 0, y: 0 };
+function scratch_load() {
+	canvas = document.getElementById('canvas');
+	ctx = canvas.getContext('2d');
+	coord = { x: 0, y: 0 };
 
-canvas_open_buttons = document.querySelectorAll('.canvas_open');
-canvas_open_buttons.forEach(function(btn) { btn.addEventListener('click', canvas_open, false); });
-document.getElementById('canvas_close').addEventListener('click', canvas_close, false);
+	canvas_open_buttons = document.querySelectorAll('.canvas_open');
+	canvas_open_buttons.forEach(function(btn) { btn.addEventListener('click', canvas_open, false); });
+	document.getElementById('canvas_close').addEventListener('click', canvas_close, false);
 
-canvas.addEventListener('mousedown', mouse_start);
-canvas.addEventListener('mouseup', stop);
+	canvas.addEventListener('mousedown', mouse_start);
+	canvas.addEventListener('mouseup', stop);
 
-canvas.addEventListener('touchstart', touch_start);
-canvas.addEventListener('touchend', stop);
+	canvas.addEventListener('touchstart', touch_start);
+	canvas.addEventListener('touchend', stop);
 
-document.getElementById('clean').addEventListener('click', clean);
+	document.getElementById('clean').addEventListener('click', clean);
+}
 
 function touch_start(event) {
 	event.preventDefault();

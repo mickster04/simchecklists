@@ -1,101 +1,110 @@
-DAHER-SOCATA TBM900 (Hot Start/XP11)
+TBM900
 --Cockpit Setup--
-Wght & Bal, Docs/Charts=Secured
-Chocks, Ties/Caps=Removed/clsd
-GPU=As req
-Prkg Brk=Set
-Fuel=L/R
-Ovrhd=All dwn
-Elec=Discon up, source as req, nav lhts on
-Warns=Confirm
-Annun & Gear Lhts=Test
-Sys Self Tests=Complete
---Starting Engine--
-Man Ovrd Cntrl=Backward
-Throttle=Cutoff
-Pulse Lhts, Aux BP=On
-Prop Area Clear=Timer start, hold starter til self-catch
+Maintenance Log=Chkd
+Parking Brake=Set
+Weight/Balance=Complete
+Chocks, Ties/Caps, Covers=Removed, fuel caps closed
+Fuel Supply=Selected
+Docs/Charts=Secured
+All overhead switches=Down except ignition
+Master Electrical Disconnect=Up
+Power Source=As req
+Nav Light=On
+Warnings=Confirmed
+Annunciator & Landing Gear Lights=Tested
+Systems Self Tests=Complete
+--Engine Start--
+ITT=OK (Motoring proc needed for ITT>155)
+Aux BP=On
+Prop Area=Clear
+Timer & Starter=Begin & Hold 2sec until self-catch, release
 Oil Press=Rising
-NG 13%=Power low idle
+Engine Parameters=Monitor, abort for high ITT
+NG 13%=Power lever to low idle
 NG 30% Within 30Sec=Continue
-NG 52%=Power flt idle, starter off
-NG 69%=Inert sep on
-GPU Start=Source batt, elec network chkd
-Egn Params Chkd=Aux bp set auto, fuel sel as req
---After Starting Engine--
-Gen=Main
+NG 52%=Power lever to flight idle
+NG 69%=Good engine start confirmed
+Source=Battery
+Inertial Seperator=On
+Generator=Main
+Aux BP=Auto
+Fuel Sel=Auto
 AP/Trims=On
-Oxy=Chkd
-Display Backup=Check, return
-AC/Bleed/Press=As req/Auto
-Stby Instr=Chkd
-Flt Plan, Nav/Comm Radios, Altimeter=Set
-LFE Sel=Done
-Xpndr/Flt Dir, Vspd, Altitude=On & preset
-Hdg Indic=Set RWY
-Trims=Set
-De-Ice Panel=As req
+Oxygen=As req
+ECS Bleed=Auto
+AC=As desired
+--After Start--
+Nav/Comm Radios=Set
+Altimeter=Set
+Flight Plan=Set
+Flight Director, Vspeed, Altitude=On and preset
+Heading Indicator=Set RWY
+Departure Briefing=Complete
 --Taxi--
-Ext Lhts=Taxi
-Flt Instr/CAS/LFE=Chkd
---Before Takeoff--
-Prkg Brk=On
-Throttle=Flt idle, feather twice
-Flaps/Trims/TOGA=TO
-De-Ice=As req
-Flt Cntrls=Chkd
-Pax Table=Stowed
-CAS, Fuel, Instr, LFE, TO Data=Chkd
-Batt Charge=<50amps
---TakeOff--
-Xpndr=Alt
-Ext Lhts=Lndg/Strobes on
-Pwr=TRQ<100, Prop<2250, ITT<800
---After TakeOff--
-Yaw Damp=On
-Gear/Flaps=Up
+Area=Clear
+Exterior Lights=Taxi
+Xponder=On
+Brakes=Engaged, parking brake off, release press
+Throttle=Toward zero Thrust
+Emergency Procedure Briefing=Complete
+--Take-Off--
+Flaps=Set
+Trim=Set T/O
+Xponder=Alt
+Exterior Lights=Landing & strobes on
+Power=Set (TRQ under 2250/ITT under 800)
+--After Take-Off--
+Yaw Damper=On
+Landing Gear/Flaps=Up
+Flaps=Up
 Strobes=Off
 Autopilot=As desired
 --Climb--
-Inert Sep/Anti-Ice=As req
-Fuel=Chkd
-Instr=Monitor
-18,000ft=Altimeter set, lndg lhts off
+Inertial Seperator=As req
+Pitot Heat=As req
+Engine Instruments=Monitor
+Above FL180=Altimeter set & landing lights off
 --Cruise--
-Fuel=Chkd
-Egn Instr=Monitor
+Power=Set
+Engine Instruments=Monitor
+Descent & Approach Briefing=Complete 5min prior to descent
 --Descent--
-Pwr/Anti-Ice=As req
-W/S Misting Prot Sys=As req
-18,000ft=Altimeter set, lndg lhts on
+Power=As req
+Below FL180=Altimeter set & landing lights on
+Below 10,000ft=Inertial seperator on
 --Approach--
-Pax Table=Stowed
-Inert Sep=On
-Fuel=Fullest tank
-Gear/Flaps=Dwn
+Landing Gear=Down
+Flaps=Down
 Strobes=On
-Yaw Damp/Autopilot=Off
+Autopilot=Off
 TOGA=Set
 --After Landing--
-Pwr=Beta (2min egn idle timer)
-Radar=Stby
-Ext Lhts=Taxi on, strobes off
+Power Lever=Beta
+Timer=Start (2min engine idle)
 Flaps=Up
-Trim=T/O
-Anti-Ice=Off
-Xpndr=On
-Flt Dir=Off
+Trim=Set T/O
+Pitot Heat=Off
+Xponder=On
+Yaw Damper & Flight Director=Off
+Exterior Lights=Taxi on & strobes off
 --Shutdown--
-Prk Brk=On
-Ext Lhts/AP/Trims=Off
+Exterior Lights=Off
+Brakes=Applied
+Parking Brake=On
+Xponder=STBY
+AP/Trims=Off
 Fuel Sel=Man
-AC/Bleed=Off/Rst
-Pwr Lever=Low Idle
-Egn Instr Stable Idle=Pwr cutoff
-Inert Sep=Off
-Ext Lhts/Gen/Aux BP/Oxy=Off
-Inert Sep Clsd=Source off
-Elect Discon=Dwn
+Oxygen=Off
+AC=Off
+ECS Bleed=Off/rst
+Power Lever=Low Idle
+Engine Instruments Stabilized Idle=power lever to cutoff
+Inertial Seperator=Off
+Aux BP=Off
+Generator=Off
+Nav Lights=Off
+Source=Off
+Master Electrical Disconnect=Down
 --Securing Aircraft--
 Chocks, Ties/Caps, Covers=Set
---Checklist by Lightdasher360 using the Hot Start TBM900 addon and docs for X-Plane 11, thanks to official Daher TBM videos and pilots sharing exp & procs online!--
+--Checklist by Lightdasher360 using the Hot Start TBM900 for X-Plane 11, thanks to official Daher TBM videos and pilots sharing exp & procs online!--

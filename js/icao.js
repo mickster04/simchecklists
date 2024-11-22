@@ -1,11 +1,13 @@
-document.getElementById('button_icao_submit').addEventListener('click', icao_submit, false);
+async function icao_load() { 
+	document.getElementById('button_icao_submit').addEventListener('click', icao_submit, false);
 
-icao_open_buttons = document.querySelectorAll('.icao_open');
-icao_open_buttons.forEach(function(btn) { btn.addEventListener('click', icao_open, false); });
+	icao_open_buttons = document.querySelectorAll('.icao_open');
+	icao_open_buttons.forEach(function(btn) { btn.addEventListener('click', icao_open, false); });
 
-document.getElementById('icao_close').addEventListener('click', icao_close, false);
-
-$base_url = 'https://api.flightplandatabase.com/nav/airport/';
+	document.getElementById('icao_close').addEventListener('click', icao_close, false);
+	
+	$base_url = 'https://api.flightplandatabase.com/nav/airport/';
+}
 
 async function fpdb_get() { 
 	const response = await fetch($url);
