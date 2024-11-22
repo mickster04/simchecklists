@@ -21,6 +21,7 @@ Select the desired checklist, click on a item to automatically cross it, mark as
 If you're on a touchscreen (recommended) just touch the item to cross and move to the next.
 
 ## Currently supported Aircraft 
+- Airbus A310
 - Airbus A32x Family (A320neo, A321neo, A319 and A318)
 - Beechcraft Baron 58 
 - Beechcraft Bonanza G36
@@ -51,11 +52,18 @@ Checklist files are simple .txt files, the format is also very simple, basically
 
 ### Checklist Masterfile 
 Due to the requirements of the offline version, a masterlist, called masterlist.json must be updated each time a new list is added, the format follows:
-```{
+
+```
+{
     "file": "a320neo.txt",
     "name": "Airbus A320neo"
-},```
-Pretty much self-explanatory, but the file property is the name of the file inside /lists and the name is the display name for the list on the first screen of the app.
+},
+```
+
+Pretty much self-explanatory, but the file property is the name of the file inside /lists and the name property is the display name for the list on the first screen of the app. You can also use the included masterlist_gen.py (unsupported) to auto generate the masterfile.
+
+### Native Versions
+Currently in alpha stage, Android only and unsupported.
 
 ### Requirements
 The code is written in Vanilla Javascript, you need to use a browser with support for ECMAScript 2019.
