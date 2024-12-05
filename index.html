@@ -16,16 +16,12 @@
 			</div>	
 			
 			<div class="spacer"></div>
-			<!--
-				<form action="checklist.php" method="post" enctype="multipart/form-data">
-					<input type="file" name="file" id="file">
-					<input type="hidden" name="post_check" value="true">
-					<input type="submit" name="submit" value="Send">
-				</form>
-			-->
 			
-			<div class="spacer"></div>	
-
+			<form action="uploaded.html" method="post" enctype="multipart/form-data">
+				<input type="file" name="file" id="file">
+				<input type="submit" name="submit" value="Send">
+			</form>
+			
 			<include file="inc/_footer.html"></include>
 		</div>
 	</body>
@@ -34,6 +30,6 @@
 	<script src="js/checks.js"></script>
 	<script>
 		index_load();
+		index_upload_load();
 	</script>
-			
 </html>

@@ -1,0 +1,45 @@
+<!--
+// SimChecklists - Interactive Checklist for Flight Sims //
+// code @ github.com/jflores82/checklists/ //
+-->
+
+<!doctype html>
+<html lang="en">
+	<head></head>
+	<body>
+		
+		<include file="icao.html"></include>
+		<include file="scratch.html"></include>
+		<include file="writer.html"></include>
+		<include file="chrono.html"></include>
+			
+		<div class="main-container">
+			<include file="icons.html"></include>
+			
+			<div class="content" id="content"></div>	
+			
+			<div class="spacer"></div>
+			
+			<include file="icons.html"></include>
+			
+			<div class="spacer"></div>
+			
+			<include file="inc/_footer.html"></include>
+		</div>
+	</body>
+	
+	<script src="js/general.js"></script>
+	<script src="js/upload.js"></script>
+	<script src="js/checks.js"></script>
+	<script src="js/icao.js"></script>
+	<script src="js/scratchpad.js"></script>
+	<script src="js/typepad.js"></script>
+	<script src="js/chrono.js"></script>
+	<script src="js/wakelock.js"></script>
+	
+	<script>
+		const content = document.getElementById("content");
+		upload_load();
+	</script>
+	
+</html>

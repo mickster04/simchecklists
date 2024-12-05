@@ -13,6 +13,10 @@
             "name": "Airbus A32x Family (Simplified)"
         },
         {
+            "file": "a330.txt",
+            "name": "Airbus A330 / Airbus Beluga"
+        },
+        {
             "file": "b461.txt",
             "name": "BAe 146 (simplified)"
         },

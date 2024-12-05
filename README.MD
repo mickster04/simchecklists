@@ -2,6 +2,8 @@
 This is a very simple app, to use as a checklist manager for flight simulators. 
 I guess it can be applied to any checklists, like grocery shopping, but it wasn't developed for that, i made for my own flight sim checklists.
 
+This software supports any flight simulator software, since it doesn't connect directly to the simulator. So you can use it for cross-check checklists with any flight simulator. The current version has checklists created specifically for: X-Plane 11, X-Plane 12, Microsoft Flight Simulator 2020 (40th anniversary) and Microsoft Flight Simulator 2024, this software isn't affiliated with any flight simulator or any airplane maker.
+
 Coded by [tibonev](http://classicgames.com.br)
 
 Check the live version of this app @ [checklist.classicgames.com.br](http://checklist.classicgames.com.br)
@@ -23,6 +25,8 @@ If you're on a touchscreen (recommended) just touch the item to cross and move t
 ## Currently supported Aircraft 
 - Airbus A310
 - Airbus A32x Family (A320neo, A321neo, A319 and A318)
+- Airbus A330 (A330-200, A330-300)
+- Airbus Beluga
 - Beechcraft Baron 58 
 - Beechcraft Bonanza G36
 - British Aerospace (BAe) 146
@@ -70,6 +74,16 @@ The code is written in Vanilla Javascript, you need to use a browser with suppor
 No need to build anything, it runs straight from the webserver.
 
 ### Version History: 
+
+Version 2.1 (2024/12/05)
+- Added: Airbus A330 / Beluga checklist by tibonev.
+- Restored the option of the user to upload their own checklists. Using fileAPI and sessionStorage, makes sure the file isn't stored anywhere permanent. (Fix issue #32)
+- Added uploaded.html which shows and handles the uploaded checklist.
+- Added js/upload.js for the new functions regarding loading the uploaded checklist.
+- Fixed blank space on index.html
+
+Version 2.0.1 (2024/11/22)
+- Fixed typo in README.MD
 
 Version 2.0 (2024/11/22)
 - Converted from PHP to pure VanillaJS, this is done in preparation for the native versions of the app to be able to run offline, since embedding a local PHP server would be an overkill, so the app will entirely locally in the native versions, without the need for the device to be connected to the internet, and this still allows me to use the same codebase for all the versions, but it will require re-compiling for each plataform on the release of an update to anything (code or lists);

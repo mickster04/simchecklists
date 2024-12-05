@@ -96,3 +96,19 @@ async function config_load() {
 		document.title = config_json['title'];
 	}
 }
+
+async function index_upload_load() { 
+	const form = document.querySelector('form');
+	form.addEventListener('submit', handleSubmit, false);
+
+	function handleSubmit(event) {
+  		const [file] = document.querySelector("input[type=file]").files;
+  		const reader = new FileReader();
+
+  		reader.addEventListener( "load",
+    		() => { sessionStorage.setItem("form-data", reader.result);	}, false,
+  		);
+
+  		if (file) { reader.readAsText(file); }
+	}
+}
