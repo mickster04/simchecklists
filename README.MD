@@ -27,6 +27,7 @@ If you're on a touchscreen (recommended) just touch the item to cross and move t
 - Airbus A32x Family (A320neo, A321neo, A319 and A318)
 - Airbus A330 (A330-200, A330-300)
 - Airbus Beluga
+- Avro RJ70/85/100
 - Beechcraft Baron 58 
 - Beechcraft Bonanza G36
 - British Aerospace (BAe) 146

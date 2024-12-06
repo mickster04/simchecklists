@@ -73,6 +73,10 @@
             "name": "Piper Warrior 2"
         },
         {
+            "file": "rj85.txt",
+            "name": "Avro RJ70/85/100"
+        },
+        {
             "file": "robin_dr400.txt",
             "name": "Robin DR400/100 Cadet"
         },
