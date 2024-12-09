@@ -4,32 +4,36 @@
 -->
 <!doctype html>
 <html lang="en">
-	<head>
-	</head>
-	
-	<body>
-		<div class="main-container">
-			<div class="content">
-				<h2><config param="title"></config> - Interactive Checklists:</h2>
-				Choose your aircraft:<br>
-				<div id="checklists"></div>
-			</div>	
-			
-			<div class="spacer"></div>
-			
-			<form action="uploaded.html" method="post" enctype="multipart/form-data">
-				<input type="file" name="file" id="file">
-				<input type="submit" name="submit" value="Send">
-			</form>
-			
-			<include file="inc/_footer.html"></include>
-		</div>
-	</body>
 
-	<script src="js/general.js"></script>
-	<script src="js/checks.js"></script>
-	<script>
-		index_load();
-		index_upload_load();
-	</script>
+<head>
+</head>
+
+<body>
+	<div class="main-container">
+		<div class="content">
+			<h2>
+				<config param="title"></config> - Interactive Checklists:
+			</h2>
+			Choose your aircraft:<br>
+			<div id="checklists"></div>
+		</div>
+
+		<div class="spacer"></div>
+
+		<form action="uploaded.html" method="post" enctype="multipart/form-data">
+			<input type="file" name="file" id="file">
+			<input type="submit" name="submit" value="Send">
+		</form>
+
+		<include file="inc/_footer.html"></include>
+	</div>
+</body>
+
+<script src="js/general.js"></script>
+<script src="js/checks.js"></script>
+<script>
+	index_load();
+	index_upload_load();
+</script>
+
 </html>
