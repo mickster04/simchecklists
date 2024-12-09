@@ -130,6 +130,7 @@ async function checklist_load_file(checklist_file) {
   let checklist = await checklist_obj.text();
   let checklist_array = checklist.replace(/(\r\n|\n|\r)/gm, "|").split("|");
   checklist_load_items(checklist_array);
+
 }
 
 function checklist_load_items(array) {
